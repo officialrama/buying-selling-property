@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .textbox-label {
+    &__wrapper {
+      @apply relative bg-[#FFFFFF] border border-solid border-[#CAD0DA] w-full rounded-lg shadow font-normal focus:outline-none focus:shadow-lg focus:shadow-slate-200 shadow-gray-100 flex overflow-hidden #{!important};
+    }
+    &__lelang-wrapper {
+      @apply relative bg-[#FFFFFF] w-full rounded-lg shadow font-normal focus:outline-none focus:shadow-lg focus:shadow-slate-200 shadow-gray-100 flex overflow-hidden #{!important};
+    }
+    &__wrapperWarning {
+      @apply relative bg-[#FFFFFF] border border-solid border-[#E84040] w-full rounded-lg shadow font-normal focus:outline-none focus:shadow-lg focus:shadow-slate-200 shadow-gray-100 flex overflow-hidden #{!important};
+    }
+    &__wrapperDisabled {
+      // @apply relative bg-[#F2F5F7] cursor-not-allowed border border-solid border-[#CAD0DA] w-full rounded-lg shadow font-normal focus:outline-none focus:shadow-lg focus:shadow-slate-200 shadow-gray-100 flex overflow-hidden #{!important};
+      @apply relative bg-[#EAEBEB] text-[#B5B6B6] cursor-not-allowed border border-solid border-[#B5B6B6] w-full rounded-lg shadow font-normal focus:outline-none focus:shadow-lg focus:shadow-slate-200 shadow-gray-100 flex overflow-hidden #{!important};
+    }
+    &__wrapperWarn {
+      @apply relative bg-[#FFBCBC] border border-solid border-[#EE9E9E] w-full rounded-lg shadow font-normal focus:outline-none focus:shadow-lg focus:shadow-slate-200 shadow-gray-100 flex overflow-hidden #{!important};
+    }
+    &__textboxWrapper {
+      @apply w-full place-self-center px-3 py-2;
+    }
+    &__labelRightWrapper {
+      @apply border-l border-solid border-[#CAD0DA] px-3 py-[0.4rem] self-center #{!important};
+      &--enabled {
+        @extend .textbox-label__labelRightWrapper;
+        @apply bg-[#00529C] border-l-0;
+      }
+    }
+    &__labelRightWrapper--enabled {
+      @extend .textbox-label__labelRightWrapper;
+      @apply bg-[#00529C] border-l-0 hover:bg-[#023462] cursor-pointer;
+    }
+    &__labelRightWrapperClick {
+      @extend .textbox-label__labelRightWrapper;
+      @apply text-white rounded-r-lg bg-[#1078CA] cursor-pointer;
+    }
+    &__labelRightWithoutBorderWrapper {
+      @apply px-3 py-2 self-center;
+    }
+    &__labelLeftWrapper {
+      @apply pl-3 py-2 self-center #{!important};
+    }
+    &__labelLeftWrapperCurrency {
+      @apply border-r border-solid border-[#CAD0DA] px-3 py-2 self-center #{!important};
+    }
+    &__labelCurrency {
+      @apply px-3 py-2 self-center #{!important};
+    }
+    &__currency {
+      @apply w-full bg-transparent p-0 border-0 focus:border-transparent focus:ring-0 #{!important};
+    }
+    &__masked {
+      @extend .textbox-label__currency;
+      @apply outline-none focus-visible:outline-none focus-visible:border-transparent;
+    }
+  }
+}

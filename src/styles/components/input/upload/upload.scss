@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .uploadbox {
+    @apply flex flex-col w-full;
+    &__dashed {
+      @apply w-full h-[300px] border-2 border-dashed rounded-xl flex items-center border-[#00529C] justify-center overflow-hidden p-3;
+    }
+    &__remove-btn {
+      @apply w-full;
+    }
+    &__imgPick-wrap {
+      @apply w-[inherit] h-full flex flex-col gap-2;
+    }
+    &__imgPick {
+      @apply w-[inherit] h-[84%] object-cover rounded-lg;
+    }
+    &__imgPick-full {
+      @apply w-[inherit] h-[inherit] object-cover rounded-lg;
+    }
+  }
+  .upload-single {
+    @apply px-3 py-2 flex flex-row gap-4 items-center;
+    &__wrapper {
+      @extend .upload-single;
+      @apply relative bg-[#FFFFFF] border border-solid border-[#CAD0DA] w-full rounded-lg shadow font-normal focus:outline-none focus:shadow-lg focus:shadow-slate-200 shadow-gray-100 flex overflow-hidden #{!important};
+    }
+    &__wrapperDisabled {
+      @extend .upload-single;
+      @apply relative bg-[#F2F5F7] cursor-not-allowed border border-solid border-[#CAD0DA] w-full rounded-lg shadow font-normal focus:outline-none focus:shadow-lg focus:shadow-slate-200 shadow-gray-100 flex overflow-hidden #{!important};
+    }
+    &__placeholder {
+      @apply align-middle disabled:cursor-not-allowed cursor-pointer whitespace-nowrap overflow-hidden overflow-ellipsis;
+    }
+    &__clear-btn {
+      @apply ml-auto cursor-pointer;
+    }
+  }
+  .btn-upload {
+    @apply inline-block border px-[8px] py-[2px] text-[#F87304] border-[#F87304] rounded-md cursor-pointer;
+    &__img {
+      @apply mr-[8px] font-normal;
+    }
+  }
+}

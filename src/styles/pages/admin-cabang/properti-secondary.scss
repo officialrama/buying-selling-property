@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .properti-secondary {
+        &__wrapper {
+            @apply mobile:mx-0 tab:mx-[30px] smallPc:mx-[30px] mx-32 mt-9;
+        }
+        &__title {
+            @apply text-[1.5rem] text-[#101C3C] font-bold;
+        }
+        &__title_2 {
+            @apply font-semibold text-[14px] mb-4;
+        }
+        &__title_content {
+            @apply text-[#777777] text-[14px];
+        }
+        &__content {
+            @apply text-[#292929] text-[14px]
+        }
+        &__title_2_kelengkapanRumah {
+            @apply font-semibold text-[#1078CA] text-[16px]
+        }
+        &__title_2_kelengkapanRumah_active {
+            @apply font-semibold text-[#B5B6B6] text-[16px]
+        }
+        &__frame-dashed {
+            @apply mobile:w-auto w-[25vw] mobile:h-auto tab:h-auto h-[300px] rounded-lg border border-dashed border-[#00529C] p-4;
+            &__wrapper {
+              @apply h-[100%] text-center flex flex-col gap-2 justify-center;
+            }
+            &__img-wrap {
+              @apply w-[100%] h-[inherit] self-center;
+            }
+            &__img {
+              @apply object-cover w-[100%] h-[210px] rounded-lg;
+            }
+        }
+        &__upload_foto {
+            &__dnd-text {
+                @apply text-[18px] text-[#292929] font-bold;
+            }
+            &__info-text {
+                @apply text-[18px] text-[#777777] font-light;
+            }
+        }
+        &__edit-properti {
+            &__wrapper {
+                @apply mobile:mx-0 tab:mx-[30px] smallPc:mx-[30px] mx-80 mt-9;
+            }
+            &__button {
+                @apply text-[#1078CA] text-[12px] font-bold;
+            }
+            &__button-wrap {
+                @apply gap-2 flex items-center;
+            }
+        }
+    }
+}
+
+@layer utilities {
+    .grid-tpl-col {
+      grid-template-columns: 1.5fr 4.5fr;
+    }
+}

@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .footer {
+    &__wrapper {
+      @apply px-[8vw] pt-[4vh] bg-white w-full;
+    }
+    &__grid-footer {
+      @apply smallPc:grid largePc:grid grid-cols-5 gap-1;
+    }
+    &__child-wrapper {
+      @apply mx-auto;
+    }
+    &__grid-link {
+      @apply smallPc:grid largePc:grid grid-rows-[7] gap-2;
+    }
+    &__powered-supported {
+      @apply mb-10 flex flex-col gap-3;
+    }
+  }
+}

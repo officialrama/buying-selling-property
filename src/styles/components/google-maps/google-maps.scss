@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .gmaps-pinbox {
+    &__txt {
+      @apply mt-auto mb-auto;
+    }
+    &__wrapper {
+      @apply w-full h-fit px-3 py-2 flex flex-row justify-between border border-solid border-[#CAD0DA] rounded-lg;
+    }
+  }
+  .gmapsApps {
+    &__wrapper {
+      @apply w-full h-[500px] relative z-10;
+    }
+    &__wrapperInfolelang {
+      @apply w-full h-[810px] relative z-10;
+    }
+    &__wrapperResult {
+      @apply w-full h-[73vh] relative z-10;
+    }
+    &__wrapperDetailProject {
+      @apply w-full h-[310px] relative z-10;
+    }
+    &__input {
+      &--findAddress {
+        @apply absolute p-3 border rounded-lg w-6/12 mt-[25px] ml-[15px] top-0 bg-white #{!important};
+      }
+      &--complited {
+        @apply absolute rounded-lg w-6/12 mt-[25px] ml-[15px] top-[50px] bg-white #{!important};
+      }
+      &--getAddress {
+        @apply absolute p-3 border rounded-lg w-10/12 mb-[25px] ml-[15px] bottom-0 bg-white  #{!important};
+      }
+    }
+  }
+}

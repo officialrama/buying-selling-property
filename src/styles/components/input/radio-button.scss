@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .radio-btn-wrap {
+    @apply flex items-center;
+  }
+}
+
+/* The radio-button-container */
+.radio-button-container {
+  display: block;
+  position: relative;
+  padding-left: 32px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio-button-text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #101c3c;
+}
+
+/* Hide the browser's default radio button */
+.radio-button-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  display: grid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid #cad0da;
+  border-radius: 50%;
+  margin-top: 3px;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-button-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+input:checked ~ .checkmark {
+  background-color: #eaf6ff;
+  &.color-blue {
+    border: 1px solid #00529c;
+  }
+  &.color-blueFigma {
+    border: 3px solid #BBDEFA;
+  }
+  &.color-orange {
+    border: 1px solid #f87304;
+  }
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-button-container input:checked ~ .checkmark:after {
+  display: block;
+  width: 50%;
+  height: 50%;
+  place-self: center;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-button-container .checkmark {
+  &.color-blue:after {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #00529c;
+  }
+  &.color-blueFigma:after {
+    width: 14px !important;
+    height: 14px !important;
+    border-radius: 50%;
+    background: #1078CA;
+  }
+  &.color-orange:after {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #f87304;
+  }
+}

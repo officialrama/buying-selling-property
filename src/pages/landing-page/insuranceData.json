@@ -1,0 +1,50 @@
+[
+      {
+      "linkInsurance": "davestera",
+      "namaInsurance": "Davestera",
+      "ProgramName": "Homespot Davestera Brilife",
+      "logoInsurance": "/images/Insurance Card/Davestera@3x.png",
+      "briLogo": "/images/Insurance Card/BRI_Life_logo 1@3x.png",
+      "status" : "active"
+    },
+    {
+      "linkInsurance": "brins-oto",
+      "namaInsurance": "Brins Oto",
+      "ProgramName": "Homespot Oto BRINS",
+      "logoInsurance": "/images/Insurance Card/Oto@3x.png",
+      "briLogo": "/images/Insurance Card/BRI_Insurance_logo@3x.png",
+      "status" : "nonactive"
+    },
+    {
+      "linkInsurance": "brins-asri",
+      "namaInsurance": "Brins Asri",
+      "ProgramName": "Homespot Asri BRINS",
+      "logoInsurance": "/images/Insurance Card/Asri@3x.png",
+      "briLogo": "/images/Insurance Card/BRI_Insurance_logo@3x.png",
+      "status" : "nonactive"
+    }, 
+    {
+      "linkInsurance": "life-care",
+      "namaInsurance": "Life Care",
+      "ProgramName": "Homespot Lifecare Brilife",
+      "logoInsurance": "/images/Insurance Card/Life Care@3x.png",
+      "briLogo": "/images/Insurance Card/BRI_Life_logo 1@3x.png",
+      "status" : "nonactive"
+    },
+    {
+      "linkInsurance": "acci-care",
+      "namaInsurance": "Acci Care",
+      "ProgramName": "Homespot Acci Care Brilife",
+      "logoInsurance": "/images/Insurance Card/Accicare@3x.png",
+      "briLogo": "/images/Insurance Card/BRI_Life_logo 1@3x.png",
+      "status" : "nonactive"
+    },
+    {
+      "linkInsurance": "asuransi-sepeda",
+      "namaInsurance": "Asuransi Sepeda",
+      "ProgramName": "Homespot Sepeda BRINS",
+      "logoInsurance": "/images/Insurance Card/Sepeda@3x.png",
+      "briLogo": "/images/Insurance Card/BRI_Insurance_logo@3x.png",
+      "status" : "nonactive"
+    }
+  ]

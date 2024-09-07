@@ -1,0 +1,21 @@
+/* eslint-disable no-useless-escape */
+export const emailRegex = /^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/;
+export const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,}$/;
+export const phoneNoRegex = /^(0)8[1-9][0-9]{7,10}$/i;
+export const rekeningNoRegex = /^[1-9][0-9]{9,15}$/i;
+export const phoneNoRegisterRegex = /^8[0-9]{8,13}$/i;
+export const idAreaCode = /^(0)|(62)/i;
+export const otpRegex = /\d{5}$/i;
+export const nameRegex = /^[a-zA-Z.,]{2,}(?: [a-zA-Z.,]+){0,10}$/i;
+export const addressRegex = /^[a-zA-Z0-9.,]{1,}(?: [a-zA-Z0-9.,]+){1,}/i;
+export const alphaRegex = /^[^-\s][a-zA-Z\s]*$/;
+export const invalidStrRegex = /[^a-z\  ]/i;
+export const invalidAlpaNumRegex = /[^a-zA-Z0-9 ]/gi;
+export const invalidNumRegex = /[^0-9]/gi;
+export const invalidNumRegexNoZero = /[^1-9 ]/g;
+export const namePeopleRegex = /[a-zA-Z., ]+/i;
+export const notNamePeopleRegex = /[^a-zA-Z., ]+/i;
+export const minusFront = /^-/gi;
+export const percentDecRegex = /^[0-9]\d*(\.\d+)?$/i;
+export const specialCharacter = /^(?=.*[^a-zA-Z0-9])/;
+export const min1CapitalAndNumber = /^(?=.*[A-Z])(?=.*\d).+$/;

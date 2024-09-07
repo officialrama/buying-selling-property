@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navbar {
+    &__wrapperNav {
+      @apply bg-white border-gray-200 px-2 sm:px-4 py-2.5;
+    }
+    &__container {
+      @apply container flex flex-wrap smallPc:justify-between largePc:justify-between items-center mx-auto;
+    }
+    &__imgLink {
+      @apply w-auto mobile:w-[120px] inline-block mobile:mx-2 tab:mx-4;
+    }
+    &__btnBurger {
+      @apply inline-flex ml-2 mobile:ml-1 items-center p-2 text-sm text-gray-500 rounded-lg smallPc:hidden largePc:hidden hover:bg-[#DDEFFC] focus:outline-none focus:ring-2 focus:ring-gray-200;
+    }
+    &__wrapperAv {
+      @apply relative flex flex-row gap-4 place-items-center;
+    }
+    &__btnChat {
+      @apply text-[0.875rem] text-[#00529C] font-normal;
+    }
+    &__btnProfile {
+      @apply flex flex-row gap-2 place-items-center;
+    }
+    &__selfPlace {
+      @apply bg-gray-300 w-px h-10 flex-1 place-self-center;
+    }
+    &__profileName {
+      @apply text-[0.875rem] text-[#101828] font-medium;
+    }
+    &__wapperUnderList {
+      @apply hidden justify-between items-center w-full smallPc:flex smallPc:w-auto smallPc:order-1 largePc:flex largePc:w-auto largePc:order-1;
+    }
+    &__mobileMenu {
+      @apply bg-[#1078CA] ml-4 justify-between items-center w-full h-[93vh] overflow-auto smallPc:flex smallPc:w-auto smallPc:order-1 smallPc:mt-8;
+    }
+    &__underList {
+      @apply flex flex-col mt-4 smallPc:flex-row smallPc:space-x-8 smallPc:mt-0 smallPc:text-sm smallPc:font-medium largePc:flex-row largePc:space-x-8 largePc:mt-0 largePc:text-sm largePc:font-medium;
+    }
+    &__avInit {
+      @apply relative w-8 h-8 overflow-hidden bg-[#101828] text-white font-bold rounded-full flex justify-center items-center;
+    }
+    &__anchor {
+      @apply block py-2 px-4 text-sm text-[#101C3C] hover:bg-gray-100 cursor-pointer;
+    }
+    &__anchorLogin {
+      @apply block py-2 text-sm text-[#101C3C] hover:bg-gray-100 cursor-pointer;
+    }
+  }
+  .navbarneo {
+    &__wrapperNav {
+      @apply bg-[#1078CA] border-gray-200 px-2 sm:px-4 py-2.5 h-[3.5rem] sticky top-0 left-0 right-0 z-50;
+    }
+    &__container {
+      @apply container flex flex-wrap smallPc:justify-start largePc:justify-start items-center mx-auto;
+    }
+    &__imgLink {
+      @apply w-auto mobile:w-[120px] inline-block mobile:mx-2 tab:mx-4;
+    }
+    &__btnBurger {
+      @apply inline-flex ml-2 mobile:ml-1 items-center p-2 text-sm text-gray-500 rounded-lg smallPc:hidden largePc:hidden focus:outline-none focus:ring-2 focus:ring-gray-200;
+    }
+    &__wrapperAv {
+      @apply relative flex flex-row gap-4 place-items-center;
+    }
+    &__btnChat {
+      @apply text-[0.875rem] text-[#00529C] font-normal;
+    }
+    &__btnProfile {
+      @apply flex flex-row gap-2 place-items-center;
+    }
+    &__selfPlace {
+      @apply bg-gray-300 w-px h-10 flex-1 place-self-center;
+    }
+    &__profileName {
+      @apply text-[0.875rem] text-[#101828] font-medium;
+    }
+    &__wapperUnderList {
+      @apply hidden justify-between items-center w-full smallPc:flex smallPc:w-auto smallPc:order-1 largePc:flex largePc:w-auto largePc:order-1;
+    }
+    &__mobileMenu {
+      @apply bg-[#1078CA] ml-4 justify-between items-center w-full h-screen overflow-auto smallPc:flex smallPc:w-auto smallPc:order-1 smallPc:mt-8;
+    }
+    &__underList {
+      @apply flex flex-col mt-4 smallPc:flex-row smallPc:space-x-3 smallPc:mt-0 smallPc:text-sm smallPc:font-medium largePc:flex-row largePc:space-x-3 largePc:mt-0 largePc:text-sm largePc:font-medium;
+    }
+    &__avInit {
+      @apply relative w-8 h-8 mobile:w-6 mobile:h-6 overflow-hidden bg-[#101828] mr-[10px] text-white font-bold rounded-full flex justify-center items-center;
+    }
+    &__anchor {
+      @apply block py-2 px-4 xxl:text-sm largePc:text-xs text-[#101C3C] cursor-pointer;
+    }
+    &__anchorLogin {
+      @apply block py-2 text-sm text-[#101C3C] cursor-pointer;
+    }
+  }
+}

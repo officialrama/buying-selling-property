@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .tabs {
+    @apply text-red-600;
+    &__wrapper {
+      @apply text-sm font-medium text-center text-[#667085] mb-4;
+    }
+    &__flex {
+      @apply flex flex-wrap gap-4 -mb-px;
+    }
+    &__active {
+      @apply inline-block py-2 font-semibold rounded-t-lg border-b-2 border-[#F87304] text-[#101C3C] cursor-pointer;
+    }
+    &__idle {
+      @apply inline-block py-2 rounded-t-lg border-b-2 border-transparent hover:border-[#F87304] hover:text-[#101C3C] cursor-pointer;
+    }
+  }
+}

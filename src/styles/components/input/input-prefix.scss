@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-prefix {
+    $component: &;
+    &__label {
+      @apply block text-base font-medium text-gray-700 mb-2;
+    }
+    &__wrapper {
+      @apply mobile:mt-1 relative rounded-md shadow-sm;
+    }
+    &__prefix {
+      @apply absolute inset-y-0 left-0 px-3 flex items-center pointer-events-none;
+      &--pref-with-b {
+        @apply border rounded-l-md border-gray-300 bg-[#F9FAFB] #{!important};
+      }
+    }
+    &__icon-pref {
+      @apply text-gray-500 sm:text-sm;
+    }
+    &__input {
+      @apply focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md #{!important};
+      &--not-allow {
+        @apply cursor-not-allowed bg-[#F9FAFB] #{!important};
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .comp-prop {
+    &__header {
+      @apply max-w-5xl mx-auto py-6 mt-9 px-5 grid grid-flow-col auto-cols-max gap-2;
+    }
+    &__page {
+      @apply p-6 pb-[100px] mobile:p-0 max-w-5xl mx-auto my-0 flex flex-row flex-grow-0;
+    }
+    &__page-2 {
+      @apply mobile:p-0 max-w-[1116px] mx-auto my-0 flex flex-row flex-grow-0 min-h-screen;
+    }
+    &__page-left {
+      @apply w-[47%] flex-grow-0;
+    }
+    &__page-right {
+      @apply w-[47%] flex-grow-0;
+    }
+    &__div-vertical {
+      @apply w-[0.3px] bg-[#D3D4D4] h-auto mx-6;
+    }
+  }
+}

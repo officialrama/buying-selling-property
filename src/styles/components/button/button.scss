@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .basic-button {
+    &__button-color {
+      &--disabled {
+        @apply px-[12px] bg-[#EAEBEB] rounded-lg #{!important};
+      }
+      &--grayLight {
+        @apply px-[12px] bg-[#F2F5F7] rounded-lg hover:bg-[#D4D7D9] active:outline-none active:bg-[#F2F5F7] #{!important};
+      }
+      &--grayBorderOnly {
+        @apply px-[12px] bg-[#FFFFFF] rounded-lg border border-solid border-[#98A2B3] #{!important};
+      }
+      &--blueFigmaBorderOnly {
+        @apply px-[12px] border-[#1078CA] rounded-lg border border-solid #{!important};
+      }      
+      &--blueLight {
+        @apply px-[12px] border border-[#00529C] bg-[#FFFFFF] rounded-lg hover:bg-[#EAF6FF] active:outline-none active:ring active:ring-[#EAF6FF] active:bg-[#FFFFFF] disabled:bg-[#FFFFFF] disabled:border disabled:border-[#B7DFFE] disabled:text-[#B7DFFE] #{!important};
+      }
+      &--blue {
+        @apply px-[12px] bg-[#00529C] rounded-lg hover:bg-[#07447B] active:outline-none active:ring active:ring-[#EAF6FF] active:bg-[#00529C] disabled:bg-[#B7DFFE] disabled:text-[#FFFFFF] #{!important};
+      }
+      &--orange {
+        @apply px-[12px] bg-[#F87304] rounded-lg hover:bg-[#D36305] active:outline-none active:ring active:ring-[#FFECE0] active:bg-[#F87304] disabled:bg-[#FFE2D1] disabled:text-[#FFFFFF] #{!important};
+      }
+      &--orangeBorderOnly {
+        @apply px-[12px] bg-[#FFFFFF] border border-solid border-[#F87304] rounded-lg hover:bg-[#FFECE0] active:bg-[#FFFFFF] active:ring active:ring-[#FFECE0] disabled:bg-slate-100 disabled:text-[#98A2B3] disabled:border-[#98A2B3] #{!important};
+      }
+      &--greenWA {
+        @apply px-[12px] bg-[#12B76A] rounded-lg hover:bg-[#0f9657] active:bg-[#0d804a] #{!important};
+
+      }
+      &--bluefigma {
+        @apply px-[12px] bg-[#1078CA] rounded-lg hover:bg-[#1078CA] active:bg-[#00529C] #{!important};
+        @apply backgroundBlue;
+      }
+      &--noBgColor {
+        @apply bg-[#FFFFFF] #{!important};
+      }
+    }
+
+    &__text-style {
+      &--disabled {
+        @apply px-2 py-2 text-[#B5B6B6] font-semibold #{!important};
+      }
+      &--gray {
+        @apply px-2 py-2 mobile:p-1 text-[#98A2B3] font-semibold #{!important};
+      }
+      &--gray2 {
+        @apply px-2 py-2 mobile:p-1 text-[#667085] font-semibold #{!important};
+      }
+      &--gray3 {
+        @apply px-2 py-2 mobile:p-1 text-[#777777] font-semibold #{!important};
+      }
+      &--blue {
+        @apply px-2 py-2 mobile:p-1 text-[#00529C] font-semibold #{!important};
+      }
+      &--white {
+        @apply px-2 py-2 text-[#FFFFFF] font-semibold #{!important};
+        @media screen and (min-width: 640px) and (max-width: 769px) {
+          @apply px-1 py-1 #{!important};
+        }
+      }
+      &--bluefigma {
+        @apply px-2 py-2 text-[#1078CA] font-semibold #{!important};
+        @media screen and (max-width: 640px) and (max-width: 769px) {
+          @apply px-1 py-1 #{!important};
+        }
+      }      
+      &--black {
+        @apply px-2 py-2 text-[#101C3C] font-semibold #{!important};
+      }
+      &--orange {
+        @apply px-2 py-2 text-[#F87304] font-semibold #{!important};
+      }
+    }
+
+    &__width {
+      &--full {
+        @apply w-full #{!important};
+      }
+    }
+
+    &__padding-size {
+      &--padding-0 {
+        @apply px-2 py-0 #{!important};
+      }
+      &--padding-1 {
+        @apply px-3 py-1 #{!important};
+      }
+      &--padding-2 {
+        @apply px-4 py-2 #{!important};
+      }
+      &--padding-3 {
+        @apply px-5 py-3 #{!important};
+      }
+      &--padding-4 {
+        @apply px-6 py-4 #{!important};
+      }
+    }
+  }
+  .btn-upload {
+    @apply border px-[8px] py-[2px] text-[#F87304] border-[#F87304] rounded-md cursor-pointer;
+    &__img {
+      @apply ml-[8px] inline-block;
+    }
+  }
+}
+
+@layer utilities {
+  .backgroundBlue {
+    background-color: #1078CA;
+  }
+}

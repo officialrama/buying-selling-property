@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .cash-submission {
+    &__wrapper {
+      &__baseModal {
+        @apply grid grid-flow-row gap-3 my-6 mb-0;
+      }
+      &__flexCol {
+        @apply flex flex-col w-full;
+      }
+      &__vaNominalBodyWrapper {
+        @apply w-full py-7;
+      }
+      &__vaNominalFlexWrapper {
+        @apply flex flex-col gap-4 mb-6;
+      }
+      &__brivaLogoWrapper {
+        @apply flex flex-row gap-2;
+      }
+    }
+    &__trxId {
+      @apply w-full pb-6 border-b border-solid border-[#CAD0DA] text-[1.125rem] text-[#101828] font-medium;
+    }
+    &__textfield {
+      &__wrapper {
+        @apply w-full p-4 flex flex-row gap-8 justify-between bg-[#F2F5F7] rounded-lg;
+      }
+      &__textNumber {
+        @apply font-medium text-[2rem] text-[#101C3C] flex-1;
+      }
+    }
+    &__trfWarn {
+      @apply text-[1.125rem] text-[#101C3C] font-normal;
+    }
+  }
+}

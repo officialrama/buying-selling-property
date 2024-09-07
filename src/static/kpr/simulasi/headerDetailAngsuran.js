@@ -1,0 +1,2 @@
+// export const headerDetailAngsuran = ["Bulan", "Sisa Pinjaman", "Angsuran Pokok", "Angsuran Bunga", "Angsuran", "Bunga"];
+export const headerDetailAngsuran = ["Bulan", "Sisa Pinjaman", "Total Angsuran"];

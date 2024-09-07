@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .confirm-btn {
+    &__wrapper {
+      @apply flex flex-col;
+    }
+    &__title {
+      @apply font-normal text-[#101C3C] text-[1rem] mt-3;
+    }
+    &__btn-wrap {
+      @apply mt-3 flex flex-row gap-3 w-full h-fit justify-end;
+    }
+  }
+}

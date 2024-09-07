@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sideMenu {
+    &__wrapper {
+      @apply rounded-lg shadow border border-gray-200 bg-white p-5;
+    }
+    &__acc-info {
+      @apply flex flex-row mobile:flex-col tab:flex-col smallPc:flex-col largePc:flex-row pb-5;
+    }
+    &__profile-pic {
+      @apply inline-block w-16 h-16 mx-auto mobile:mb-2 tab:mb-2 xl:mx-0 rounded-full bg-[#F2F5F7] ring-2 ring-white object-cover; 
+    }
+    &__name {
+      @apply font-semibold mobile:text-center tab:text-center smallPc:text-[16px] largePc:text-[20px] text-[#101C3C] ml-2;
+    }
+    &__name-2 {
+      @apply font-bold mobile:text-center tab:text-center smallPc:text-[16px] largePc:text-[20px] text-[#292929] ml-2;
+    }
+    &__status-wrap {
+      @apply text-[14px] text-[#667085] ml-2 mobile:justify-center tab:justify-center flex;
+    }
+    &__status {
+      @apply ml-[10.5px] font-normal;
+    }
+  }
+}

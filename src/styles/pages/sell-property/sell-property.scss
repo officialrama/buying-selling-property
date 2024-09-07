@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sellprops {
+    &__wrapper {
+      @apply mobile:mx-0 tab:mx-[30px] smallPc:mx-[30px] mx-32 mt-9;
+    }
+    &__text-wrapper {
+      @apply flex flex-col gap-4 mb-8;
+    }
+    &__title {
+      @apply text-[1.5rem] text-[#101C3C] font-bold;
+    }
+    &__horizontal-line {
+      @apply mb-4;
+    }
+    &__card {
+      &__wrapper {
+        @apply mb-4;
+      }
+      &__wrapper-content {
+        @apply p-2;
+      }
+      &__title {
+        @apply font-semibold text-[#00529C] text-[1.5rem] mb-6;
+        &--mb-2 {
+          @extend .sellprops__card__title;
+          @apply mb-2 #{!important};
+        }
+      }
+      &__redstar {
+        @apply ml-1 text-[#F04438] font-normal;
+      }
+      &__content-radio-grid {
+        @apply grid mobile:grid-cols-1 grid-cols-4 gap-6 mb-7;
+      }
+      &__upload-wrap {
+        @apply flex mobile:flex-col flex-row gap-4 mb-4;
+      }
+      &__frame-dashed {
+        @apply mobile:w-auto w-[25vw] mobile:h-auto tab:h-auto h-[300px] rounded-lg border border-dashed border-[#00529C] p-4;
+        &__wrapper {
+          @apply h-[100%] text-center flex flex-col gap-4 justify-center;
+        }
+        &__img-wrap {
+          @apply w-[100%] h-[inherit] self-center;
+        }
+        &__img {
+          @apply object-cover w-[100%] h-[210px] rounded-lg;
+        }
+      }
+      &__dnd-text {
+        @apply text-[0.875rem] text-[#101C3C] font-medium;
+      }
+      &__dnd-plus {
+        @apply mx-auto;
+      }
+      &__or-txt {
+        @apply text-[0.75rem] text-[#667085] font-normal;
+      }
+      &__form-col {
+        &__wrapper {
+          // @apply mt-4 tab:flex smallPc:flex largePc:flex flex-row gap-4 items-baseline;
+          @apply tab:grid smallPc:grid largePc:grid gap-4 grid-cols-2 items-center mt-4;
+        }
+        &__wrap {
+          @apply tab:grid smallPc:grid largePc:grid gap-4 grid-cols-2 items-center mt-4;
+        }
+        &__text {
+          @apply mobile:w-full w-[25%] font-medium flex flex-row gap-4 self-center;
+        }
+        &__title-25 {
+          @apply mobile:mb-4 mobile:w-full font-medium flex flex-row gap-4 self-center;
+          &--start {
+            @apply mobile:mb-4 mobile:w-full font-medium flex flex-row gap-4 self-start;
+          }
+        }
+        &__form-75 {
+          @apply w-[75%] mobile:w-full;
+        }
+        &__form-40 {
+          @apply w-[40%] mobile:w-full;
+        }
+      }
+      &__checklist-wrapper {
+        @apply grid mobile:grid-cols-2 grid-cols-4 w-full gap-5;
+      }
+      &__text-hidden {
+        @apply mobile:hidden;
+      }
+      &__wrap-flex-col {
+        @apply flex flex-col gap-6;
+      }
+      &__prop-detail-wrap {
+        @apply tab:flex smallPc:flex largePc:flex flex-row gap-4 mb-6;
+      }
+      &__thumbmaps {
+        @apply mobile:mx-auto rounded-lg w-28;
+      }
+      &__prop-name {
+        &__wrapper {
+          @apply flex flex-col gap-2;
+        }
+        &__name {
+          @apply text-[1.25rem] text-[#101C3C] font-semibold;
+        }
+        &__edit {
+          @apply text-[0.875rem] text-[#F87304] font-normal;
+        }
+        &__address {
+          @apply text-[1rem] text-[#667085] max-w-[65%] font-normal;
+        }
+      }
+      &__rt-rw-wrap {
+        @apply flex flex-row gap-4 mt-4;
+      }
+      &__detail-address-wrap {
+        @apply grid grid-cols-2 grid-flow-row gap-4 mt-2;
+      }
+      &__pinloc-wrap {
+        @apply mt-8;
+      }
+      &__detail-prop-wrap {
+        @apply flex flex-col gap-2;
+      }
+      &__desc-wrap {
+        @apply p-2 tab:flex smallPc:flex largePc:flex flex-row gap-4;
+      }
+      &__desc-title {
+        @extend .sellprops__card__title;
+        @apply mobile:w-full w-[25%] mb-6;
+      }
+    }
+    &__button-next-prev {
+      @apply flex flex-row gap-x-4 mb-[150px] mx-32 mobile:mx-auto mt-9;
+    }
+    &__successSell {
+      &__wrapper {
+        @apply flex flex-col place-items-center px-4 py-10;
+      }
+      &__circle {
+        @apply w-28 h-28;
+      }
+      &__title {
+        @apply font-bold text-[#101C3C] mobile:text-sm mobile:mb-3 text-center text-[1.5rem] mt-3;
+      }
+      &__desc {
+        @apply text-[#101C3C] text-[1.125rem] mobile:text-xs text-center font-normal;
+      }
+    }
+    &__cardSelect {
+      &__wrapper {
+        @apply grid grid-cols-4 gap-2;
+      }
+      &__card {
+        @apply w-full px-4 py-2 border border-solid border-[#CAD0DA] rounded-lg flex flex-col gap-2 place-items-center text-[#667085] text-center;
+      }
+      &__orange-txt {
+        @apply text-[#F87304] font-normal;
+      }
+    }
+  }
+}
+
+@layer utilities {
+  .grid-tpl-col {
+    grid-template-columns: 1.5fr 4.5fr;
+  }
+}

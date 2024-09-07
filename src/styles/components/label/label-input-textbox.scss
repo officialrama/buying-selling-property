@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .label-input-txtbox {
+    @apply text-[#101C3C] font-medium text-[14px] mb-1;
+  }
+}

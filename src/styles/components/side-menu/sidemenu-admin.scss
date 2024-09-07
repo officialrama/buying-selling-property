@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sm-admin {
+    &__wrapper {
+      @apply border-r-2 border-[#E4E7EC] border-solid;
+    }
+    &__wrapperSmallPcAct {
+      @apply mobile:absolute mobile:z-10 tab:absolute tab:z-10 tab:w-[54vw] smallPc:w-96;
+      &__menuName {
+        @apply mobile:block tab:block smallPc:block;
+      }
+    }
+    &__wrapperSmallPc {
+      @apply mobile:z-10 mobile:w-16 tab:w-16 smallPc:w-16;
+      &__menuName {
+        @apply mobile:hidden tab:hidden smallPc:hidden;
+      }
+    }
+    &__sidebar-wrap {
+      @apply overflow-y-auto h-screen py-4 px-3 bg-white;
+    }
+    &__ul-parent {
+      @apply space-y-2;
+    }
+    &__button-menu {
+      @apply flex mt-[30px] items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 bg-white;
+    }
+    &__btn-name {
+      @apply flex-1 text-[14px] ml-3 text-left font-semibold;
+    }
+    &__selected {
+      @apply text-[#00529C] font-normal;
+    }
+    &__ul-sub {
+      @apply py-2 space-y-2;
+    }
+    &__selected-sub {
+      @apply border-4 border-white inset-y-0 border-l-[#00529C] font-semibold;
+    }
+    &__link-sub {
+      @apply flex items-center text-[14px] p-2 pl-11 w-full text-gray-900 transition duration-75 hover:bg-gray-100 bg-white;
+    }
+    &__btn-mon-status {
+      @apply flex items-center mt-[30px] p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 bg-white;
+    }
+    &__span-mon {
+      @apply ml-3 text-[14px] font-semibold;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .hs-search-rslt {
+    &__wrap {
+      @apply largePc:flex flex-row gap-6 px-12 pb-6 relative mobile:p-3;
+    }
+    &__wrap-wishlist {
+      @apply largePc:flex flex-row gap-6 px-6 py-3 relative mobile:p-3;
+    }
+    &__filter-wrap {
+      @apply flex gap-2;
+    }
+    &__filter {
+      @apply text-[#00529C] py-[2px] px-[12px] bg-[#EAF6FF] font-semibold rounded-full;
+    }
+    &__property {
+      @apply text-[18px] mt-4 font-semibold;
+    }
+    &__property-secondary {
+      @apply text-lg mt-4 text-[#101828] font-bold;
+    }
+    &__location {
+      @apply text-[12px] text-[#98A2B3] mb-[16px] font-normal;
+    }
+    &__price {
+      @apply text-[#00529C] text-[20px] mb-[16px] font-bold;
+    }
+    &__dev-wrap {
+      @apply flex gap-2 mb-2 justify-between;
+    }
+    &__dev-field {
+      @apply text-[#101C3C] text-[14px] font-normal place-self-center;
+    }
+    &__dev-value {
+      @apply text-[#F87304] text-[14px] font-bold place-self-center;
+    }
+    &__fac-price-wrap {
+      @apply mt-20 w-full rounded-xl flex flex-col border border-solid border-[#B7DFFE] overflow-hidden;
+    }
+    // &__fac-wrap {
+    //   @apply flex flex-row mobile:grid mobile:grid-cols-2 justify-between w-full gap-4 p-2 border-b border-[#B7DFFE] border-solid;
+    // }
+    &__fac-wrap {
+      @apply flex flex-row mobile:grid mobile:grid-cols-2 justify-between w-full gap-4 p-2;
+    }
+    &__kpr-wrap {
+      @apply bg-[#EAF6FF] p-2 flex flex-row mobile:flex-col tab:flex-col mobile:gap-1 tab:gap-1 justify-between;
+    }
+    &__notfound {
+      @apply text-[0.75rem] italic my-0 mx-auto;
+    }
+    &.oneline {
+      &__wrap {
+        @apply flex flex-row gap-2;
+      }
+      &__field {
+        @apply text-[#101C3C] text-xs place-self-center font-medium;
+      }
+      &__value {
+        @apply text-[#00529C] text-sm place-self-center font-bold;
+      }
+      &__fac-icon {
+        @apply w-[18px] place-self-center;
+      }
+    }
+  }
+  .sliderTypePrj{
+    @apply w-[340px] h-14;
+  }
+}

@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .admin-page {
+    &__srch-drp-wrap {
+      @apply gap-x-7 grid;
+    }
+    &__srch-drp-gmk-wrap {
+      @apply gap-x-4 grid;
+      @media screen and (min-width: 640px) and (max-width: 769px) {
+        @apply gap-x-2 grid;
+      }
+    }
+    &__srch-drp {
+      @apply mb-4;
+    }
+    &__tbl {
+      @apply p-[13px] border-t border-b border-[#D3D4D4] smallPc:pr-8;
+      &--left {
+        @extend .admin-page__tbl;
+        @apply rounded-tl-lg border-l;
+      }
+      &--right {
+        @extend .admin-page__tbl;
+        @apply rounded-tr-lg border-r;
+      }
+    }
+  }
+  .list-dev {
+    &__wrapper {
+      @apply gap-x-7 grid;
+    }
+  }
+  .add-admin {
+    &__wrapper {
+      @apply largePc:p-6 smallPc:p-6 tab:p-3 mobile:p-0 pt-2 pb-0;
+    }
+    &__form-wrap {
+      @apply w-full grid grid-cols-5 gap-7;
+    }
+    &__img-base {
+      @apply col-start-1 col-end-2;
+    }
+    &__txtbox {
+      @apply mb-2;
+    }
+    &__img-wrap {
+      @apply border border-gray-200 rounded-lg p-4 h-max;
+    }
+    &__btn-upload {
+      @apply mt-4 w-full;
+    }
+    &__img-note {
+      @apply text-center text-[#667085] text-[12px] mt-4;
+    }
+    &__form-wrapper {
+      @apply col-start-1 col-end-6;
+    }
+    &__form-txtbox-wrap {
+      @apply mb-4;
+    }
+    &__form-txtbox {
+      @apply cursor-not-allowed;
+    }
+    &__i-pref {
+      @apply pl-36 pr-12 #{!important};
+    }
+    &__btn-upload-pks {
+      @apply border px-[8px] py-[2px] text-[#F87304] border-[#F87304] rounded-md;
+    }
+    &__img-upload-pks {
+      @apply ml-[8px] inline-block;
+    }
+    &__range-price-wrap {
+      @apply mb-4 flex flex-col gap-2;
+    }
+    &__range-price {
+      @apply mb-4 flex flex-row mobile:grid mobile:grid-flow-row gap-4;
+    }
+    &__btn-wrap {
+      @apply flex mt-[24px] justify-end;
+    }
+    &__btn-bottom {
+      @apply border border-[#00529C] rounded-xl;
+      &--save {
+        @extend .add-admin__btn-bottom;
+        @apply ml-4;
+      }
+      &--edit {
+        @extend .add-admin__btn-bottom;
+        @apply p-2 border border-[#F87304] text-[0.75rem] ml-auto mr-5;
+      }
+    }
+  }
+}
+
+@layer utilities {
+  .gtc-mon-user {
+    grid-template-columns: 4.7fr 1.5fr !important;
+    @media screen and (min-width: 640px) and (max-width: 769px) {
+      grid-template-columns: 3fr 1.5fr !important;
+    }
+    @media screen and (min-width: 320px) and (max-width: 639px) {
+      grid-template-columns: 1.5fr 1.5fr !important;
+    }
+  }
+  .gtc-gmk-kpr {
+    grid-template-columns: 9fr 1.5fr 1.7fr !important;
+    @media screen and (min-width: 640px) and (max-width: 1280px) {
+      grid-template-columns: 0.7fr 0.5fr 0.5fr !important;
+    }
+    @media screen and (min-width: 320px) and (max-width: 639px) {
+      grid-template-columns: 1.5fr !important;
+    }
+  }
+  .gtc-list-dev-igr {
+    grid-template-columns: 7.2fr 1.5fr !important;
+  }
+  .gtc-salesadmin-reff {
+    grid-template-columns: 45% 1fr 1fr 1fr !important;
+    @media screen and (min-width: 640px) and (max-width: 769px) {
+      grid-template-columns: 25% 0.5fr 0.5fr 0.5fr !important;
+    }
+    @media screen and (min-width: 320px) and (max-width: 639px) {
+      grid-template-columns: 25% 0.5fr 0.5fr 0.5fr !important;
+    }
+  }
+  .gtc-user-reff {
+    grid-template-columns: 40% 1fr 1fr 1fr !important;
+    @media screen and (min-width: 640px) and (max-width: 769px) {
+      grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr !important;
+    }
+    @media screen and (min-width: 320px) and (max-width: 639px) {
+      grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr !important;
+    }
+  }
+  .gtc-hlm {
+    grid-template-columns: 70% 1fr 1fr !important;
+    @media screen and (min-width: 640px) and (max-width: 769px) {
+      grid-template-columns: 40% 0.5fr 0.5fr !important;
+    }
+    @media screen and (min-width: 320px) and (max-width: 639px) {
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
+  }
+}

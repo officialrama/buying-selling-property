@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .field-persn-data {
+    @apply flex mobile:block flex-col;
+    &__field {
+      @apply text-[1rem] w-[35%] mobile:w-full font-normal mobile:font-bold;
+    }
+    &__value {
+      @apply text-[1rem] w-[65%] mobile:w-full font-semibold mobile:font-normal;
+    }
+  }
+  .neo-field-persn-data {
+    @apply flex mobile:block flex-col;
+    &__field {
+      @apply text-[1rem] w-[35%] mobile:w-full font-normal mobile:font-bold;
+    }
+    &__value {
+      @apply text-[1rem] w-[65%] mobile:w-full font-semibold mobile:font-normal;
+    }
+  }
+}

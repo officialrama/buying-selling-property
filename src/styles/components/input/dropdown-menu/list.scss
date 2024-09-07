@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .dropdown-list {
+    &__wrapper {
+      @apply absolute z-10 w-[120px] xxl:w-[180px] mobile:w-[300px] bg-[#FFFFFF] rounded-md divide-y divide-gray-100 shadow-xl border border-[#E4E7EC] border-solid;
+    }
+    &__wrapper-2 {
+      @apply absolute z-10 w-full bg-[#FFFFFF] rounded-md divide-y divide-gray-100 shadow-xl border border-[#E4E7EC] border-solid;
+    }
+    &__wraperProfile {
+      @apply top-12 -right-3 absolute z-10 w-44 bg-[#FFFFFF] rounded-md divide-y divide-gray-100 shadow-xl border border-[#E4E7EC] border-solid;
+    }
+    &__wraperAdmin {
+      @apply top-16 right-4 absolute z-10 w-44 bg-[#FFFFFF] rounded-md divide-y divide-gray-100 shadow-xl border border-[#E4E7EC] border-solid;
+    }
+    &__listWrap {
+      @apply text-sm text-gray-700;
+    }
+    &__list {
+      @apply block py-4 px-4 hover:bg-[#F5F5F5] cursor-pointer;
+      &--sm {
+        @extend .dropdown-list__list;
+        @apply p-3 #{!important};
+      }
+    }
+    &__list-checkbox {
+      @apply block py-4 px-4 hover:bg-[#F5F5F5];
+      &--sm {
+        @extend .dropdown-list__list-checkbox;
+        @apply p-3 #{!important};
+      }
+    }
+    &__list-active {
+      @apply block py-4 px-4 bg-[#F5F5F5] cursor-pointer;
+    }
+  }
+  .dropdown-inputs {
+    &__wrapper {
+      @apply absolute z-10 w-full mt-2 bg-[#FFFFFF] rounded-xl divide-y shadow-xl border border-[#E4E7EC] border-solid;
+    }
+    &__header {
+      @apply bg-[#F8F9F9] border-[#D3D4D4] border p-4 object-cover;
+      button {
+        @apply text-[#1078CA] text-[14px] font-bold;
+      }
+    }
+    &__list {
+      @apply px-2 text-[#292929] font-semibold text-[14px] flex flex-col gap-2 overflow-x-auto h-[218px];
+      p {
+        @apply p-2;
+      }
+    }
+    &__list-zero {
+      @apply text-[#777777] font-medium text-[14px] flex flex-col justify-center items-center gap-2 h-fit;
+      p {
+        @apply p-2;
+      }
+    }
+    &__proyek__wrapper {
+      @apply flex grid grid-cols-2 gap-2;
+    }
+    &__proyek-list {
+      @apply flex flex-row gap-2 p-2 content-center hover:bg-[#DDEFFC] rounded-xl cursor-pointer;
+    }
+    &__proyek-list-zero {
+      @apply flex flex-row gap-2 p-2 content-center text-[#777777] text-[14px] font-medium justify-center items-center;
+      p {
+        @apply py-2;
+      }
+    }
+    &__proyek_img {
+      @apply row-span-2 w-[40px] h-[40px] object-cover rounded-xl
+    }
+    &__text {
+      @apply font-semibold text-[16px];
+    }
+
+  }
+}

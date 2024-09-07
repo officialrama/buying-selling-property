@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .border-line {
+    @apply bg-gray-300 h-px mobile:mb-4;
+  }
+}

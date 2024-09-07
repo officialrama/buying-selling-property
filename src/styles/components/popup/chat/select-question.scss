@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .select-question {
+    &__wrapper {
+      @apply w-[40vw] my-4;
+    }
+    &__title {
+      @apply font-semibold text-[1rem] text-[#101C3C] mb-4;
+    }
+    &__radio {
+      &__wrapper {
+        @apply flex flex-col gap-2 mb-4;
+      }
+      &__label {
+        @apply text-[0.875rem] text-[#101C3C] font-medium;
+      }
+    }
+    &__textarea {
+      &__wrapper {
+        @apply ml-8;
+      }
+    }
+  }
+}

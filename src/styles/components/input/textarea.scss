@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .textarea {
+    &__wrap {
+      @apply w-full;
+    }
+    &__textareaboxWrapper {
+      @apply w-full place-self-center;
+    }
+    &__label {
+      @apply mb-2;
+    }
+    &__comp {
+      @apply overflow-auto rounded-lg border border-solid border-[#CAD0DA] w-full;
+    }
+    &__comp-failed {
+      @apply overflow-auto rounded-lg border border-solid border-[#E84040] w-full #{!important};
+    }
+    &__disable {
+      @apply bg-[#F9FAFB] cursor-not-allowed;
+    }
+    &__not-resize {
+      @apply resize-none;
+    }
+  }
+}

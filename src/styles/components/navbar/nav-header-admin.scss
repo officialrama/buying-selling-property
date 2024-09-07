@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-header-admin {
+    &__wrapper {
+      @apply flex h-[80px] bg-white sticky top-0 justify-between z-20 items-center px-[24px] border-b-2 border-solid;
+    }
+    &__title {
+      &--mortgage {
+        @apply text-[#00529C] font-bold;
+      }
+      &--h-line {
+        @apply text-[#E4E7EC] font-normal mx-2;
+      }
+      &--mgmt-sys {
+        @apply text-[#00529C] mobile:text-[0.75rem] font-normal;
+      }
+    }
+    &__user-wrap {
+      @apply flex items-center;
+    }
+    &__space-left {
+      @apply ml-[25px] font-normal;
+    }
+    &__name {
+      @apply ml-[10px] font-normal;
+    }
+  }
+}

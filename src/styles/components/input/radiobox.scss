@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .radiobox {
+    &__is-active {
+      @apply w-full p-4 bg-[#EAF6FF] border border-solid border-[#00529C] rounded-lg;
+    }
+    &__is-idle {
+      @apply w-full p-4 bg-[#FFFFFF] border border-solid rounded-lg;
+    }
+  }
+}

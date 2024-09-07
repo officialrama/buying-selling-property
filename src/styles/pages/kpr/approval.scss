@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .kprApproval {
+    &__button-next-prev {
+      @apply flex flex-row gap-x-2 mobile:w-auto w-[30vw] mobile:self-stretch self-end mr-1;
+    }
+    &__bodyWrapper {
+      @apply mobile:p-0 p-6;
+    }
+    &__pages {
+      &__wrapper {
+        @apply p-6 max-w-7xl mx-auto mb-[16px] my-0;
+      }
+      &__title {
+        @apply font-bold text-[1.25rem] text-[#00529C] mb-4;
+      }
+      &__detailsCard {
+        &__childWrapper {
+          @apply flex flex-col gap-y-6 p-3;
+        }
+        &__gridWrapper {
+          @apply grid mobile:grid-cols-1 grid-cols-2 gap-y-6 gap-x-5;
+        }
+      }
+      &__upload {
+        &__childWrapper {
+          @apply flex flex-col p-3;
+        }
+        &__uploadWrapper {
+          @apply flex flex-row mb-[3.5rem] gap-x-6;
+        }
+        &__gridWrapper {
+          @apply grid grid-cols-2 gap-y-6 gap-x-5;
+        }
+      }
+      &__borderLine {
+        @apply border-t border-solid border-[#E4E7EC] my-1;
+      }
+      &__summary {
+        &__wrapper {
+          @apply flex flex-col gap-4 p-4;
+        }
+        &__upload-btn-wrap {
+          @apply flex flex-row gap-3;
+        }
+        &__prev-upload {
+          @apply mt-4;
+        }
+      }
+      &__done {
+        &__bodyWrapper {
+          @apply p-6 mt-5 mb-80;
+        }
+        &__wrapper {
+          @apply p-6 max-w-xl mx-auto my-0 mb-[16px] flex flex-col place-items-center;
+        }
+        &__circle {
+          @apply w-[200px] h-[200px] mb-10;
+        }
+        &__fail {
+          @apply w-[200px] h-[200px] mb-10 ml-10;
+        }
+        &__title {
+          @apply font-bold text-[1.25rem] mb-4 text-[#000000] text-center;
+        }
+        &__desc {
+          @apply font-normal text-[1rem] mb-8 text-[#101C3C] text-center;
+        }
+        &__virtualAccount {
+          @apply bg-[#DDEFFC] mb-10 flex justify-between rounded-md;
+          @apply w-full #{!important};
+          @apply height-virtualAccount;
+        }
+      
+        &__virtualAccountLabel {
+          @apply text-[#777777];
+        }
+      
+        &__virtualAccountDetails {
+          @apply flex flex-col items-start;
+        }
+
+        &__virtualAccountCopy {
+          @apply flex items-end;
+        }
+      
+        &__virtualAccountNumber {
+          @apply text-[#292929] font-bold;
+        }
+        &__successMessage {
+          @apply successMessage font-bold;
+        }
+        &__copyButton {
+          @apply bg-[#DDEFFC] rounded-md;
+          position: relative;
+        }        
+      }
+    }
+  }
+}
+
+@layer components {
+  .height-virtualAccount {
+    height: 432px;
+    height: 76px;
+    border-radius: 8px;
+    padding: 16px;
+    gap: 16px;
+  }
+}
+
+@layer components {
+  .successMessage {
+    display: inline-block;
+    background-color: #DDEFFC;
+    color: black;
+    border-radius: 4px;
+    width: auto;
+    padding: 0px 0px;
+  }
+}

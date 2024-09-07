@@ -1,0 +1,268 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .prod-detail {
+    &__bodyWrapper {
+      @apply p-6;
+    }
+    &__pages {
+      &__wrapper {
+        @apply p-6 mobile:p-0 max-w-5xl mx-auto my-0;
+      }
+      &__breadcrumbNav {
+        @apply py-2 px-1 mb-9 flex flex-row gap-14;
+      }
+      &__breadcrumb {
+        &__back {
+          &__topWrapper {
+            @apply flex flex-row gap-10;
+          }
+          &__wrapper {
+            @apply grid grid-flow-col gap-3  cursor-pointer;
+          }
+          &__text {
+            @apply text-[0.875rem] text-[#00529C] font-semibold w-full;
+          }
+        }
+        &__nav {
+          &__wrapper {
+            @apply mobile:hidden flex flex-row gap-2 grow;
+          }
+          &__textGray {
+            @apply font-normal text-[0.75rem] text-[#667085] place-self-center;
+          }
+          &__textOrange {
+            @apply font-normal text-[0.75rem] text-[#F87304] place-self-center;
+          }
+        }
+      }
+      &__property {
+        &__photos {
+          &__wrapper {
+            @apply w-full smallPc:h-[400px] largePc:h-[438] mobile:h-[218px] md:overflow-hidden rounded-2xl flex md:gap-2 md:mb-8;
+          }
+          &__wrapper-old {
+            @apply w-full smallPc:h-[400px] largePc:h-[400px] overflow-hidden rounded-2xl flex gap-2 mb-8;
+          }
+          &__img-wrap {
+            @apply w-[38%] font-normal cursor-pointer;
+          }
+          &__img-wrap-2 {
+            @apply relative w-[76%] font-normal cursor-pointer;
+          }
+          &__img-right-wrap {
+            @apply w-[24%] flex flex-col gap-2 cursor-pointer;
+          }
+          &__images {
+            @apply bg-cover bg-center bg-no-repeat w-full h-[438px] object-cover;
+          }
+          &__left-images {
+            @apply bg-cover bg-center bg-no-repeat w-full h-[215px] object-cover;
+          }
+          &__totalImg {
+            &__wrapper {
+              @apply absolute inset-0 flex items-center justify-center bg-[#29292999] bg-opacity-60 p-2 gap-2;
+            }
+            &__wrapper-button {
+              @apply flex flex-row gap-2 items-center content-center justify-center rounded-lg border border-[#1078CA] bg-[#FFFFFF] w-[80px] h-[48px] cursor-pointer;
+            }
+            &__icon {
+              @apply w-4;
+            }
+            &__text {
+              @apply text-[0.875rem] text-[#00529C] font-semibold;
+            }
+          }
+          &__totalImg-old {
+            &__wrapper {
+              @apply absolute bottom-0 right-0 mx-4 my-12 bg-white/75 p-2 flex gap-2 rounded-lg;
+            }
+            &__icon {
+              @apply w-4;
+            }
+            &__text {
+              @apply text-[0.875rem] text-[#00529C] font-semibold;
+            }
+          }
+        }
+        &__detailBuying {
+          &__bodyWrapper {
+            @apply w-full smallPc:flex largePc:flex gap-6 mb-24;
+          }
+
+          &__left {
+            &__wrapper {
+              @apply w-[100%] smallPc:w-[70%] largePc:w-[70%] h-full smallPc:flex largePc:flex flex-col;
+            }
+            &__priceLoveShare {
+              &__wrapper {
+                @apply w-full tab:flex smallPc:flex largePc:flex flex-row justify-between mb-4;
+              }
+              &__price {
+                @apply text-[2rem] text-[#00529C] font-bold;
+              }
+            }
+            &__compareIcon {
+              @apply my-auto cursor-pointer w-6 h-6;
+            }
+            &__propertyNameLocation {
+              &__wrapper {
+                @apply mb-3 flex flex-col gap-1;
+              }
+              &__propertyName {
+                @apply text-[1.25rem] text-[#101C3C] font-semibold;
+              }
+              &__location {
+                @apply text-base text-[#98A2B3] font-normal;
+              }
+            }
+            &__facilities {
+              &__wrapper {
+                @apply tab:grid smallPc:grid largePc:grid grid-cols-3 gap-5 mt-3 mb-6;
+              }
+              &__icon {
+                @apply w-[24px] place-self-center;
+              }
+              &__name {
+                @apply ml-3 text-[#101C3C] place-self-center;
+              }
+            }
+            &__description {
+              &__wrapper {
+                @apply mb-6 flex flex-col gap-1;
+              }
+              &__titleDesc {
+                @apply text-[1.125rem] text-[#101C3C] font-semibold;
+              }
+              &__desc {
+                @apply text-[0.875rem] text-[#667085] font-normal;
+              }
+            }
+            &__detailHouse {
+              &__wrapper {
+                @apply flex flex-col gap-4;
+              }
+            }
+            &__detailCard {
+              &__wrapper {
+                @apply border border-[#CAD0DA] rounded-xl p-4 w-full;
+              }
+              &__title {
+                @apply font-semibold text-[1.125rem] text-[#101C3C] mb-4;
+              }
+            }
+            &__address {
+              &__wrapper {
+                @apply flex flex-col gap-4;
+              }
+              &__colWrapper {
+                @apply flex flex-col gap-4;
+              }
+              &__addressWrapper {
+                @apply flex flex-row gap-2;
+              }
+              &__icon {
+                @apply max-w-[20px] max-h-[20px] font-normal;
+              }
+              &__gmapsWrapper {
+                @apply rounded-lg overflow-hidden;
+              }
+            }
+            &__list-facility {
+              &__wrapper {
+                @apply mobile:whitespace-nowrap tab:whitespace-nowrap smallPc:flex largePc:flex flex-row justify-between max-w-[26vw] gap-3;
+              }
+              &__title {
+                @apply mobile:mb-2 tab:mb-2 flex flex-row gap-2 w-[45%] place-self-center;
+              }
+              &__desc {
+                @apply w-[55%] font-normal;
+              }
+              &__text {
+                @apply text-[0.75rem] place-self-center text-[#101C3C] text-left;
+              }
+            }
+            &__dev-info {
+              &__wrapper {
+                @apply mobile:grid-cols-2 tab:flex smallPc:grid largePc:grid largePc:grid-cols-[78%,20%] smallPc:grid-cols-[60%,30%] flex-row justify-between gap-4 w-full;
+              }
+              &__profile-dev {
+                // @apply grid largePc:grid-cols-[12%,82%,25%] xxl:grid-cols-[10%,92%,25%] smallPc:grid-cols-[20%,94%,52%] mobile:grid-cols-[20%,80%] border-0;
+                @apply grid border-0 xxl:grid-cols-[11%,92%,25%] miniPc:grid-cols-[10%,92%,25%] small:grid-cols-[10%,92%,27%] xl:grid-cols-[11%,81%,35%] mobile:grid-cols-[16%,85%]
+              }
+              &__profile-pic {
+                @apply w-12 h-12 mr-4 bg-[#00529C] text-white font-semibold rounded-full flex justify-center items-center;
+              }
+              &__name {
+                @apply flex flex-col gap-1 font-semibold text-[16px] text-[#F87304] flex-auto;
+              }
+              &__nameCompare {
+                @apply flex flex-col gap-1 font-semibold text-[0.875rem] text-[#F87304] flex-auto ml-6;
+              }
+              &__location {
+                @apply text-[0.75rem] text-[#667085] font-medium;
+              }
+              &__chat-btn {
+                @apply ml-4;
+              }
+              &__wa-btnCompare {
+                @apply -ml-9;
+              }
+              &__wa-btn {
+                @apply mobile:flex my-2;
+              }
+            }
+          }
+
+          &__right {
+            &__wrapper {
+              @apply w-[30%] mobile:hidden tab:hidden h-full flex flex-col;
+            }
+            &__calc {
+              &__wrapper {
+                @apply mt-6 p-6 border border-solid border-[#E4E7EC] rounded-xl overflow-hidden shadow-lg;
+              }
+              &__title {
+                @apply font-semibold text-[1.25rem] text-[#00529C] mb-6;
+              }
+              &__interestInfo {
+                @apply font-normal text-[0.875rem] text-[#98A2B3] mt-2;
+              }
+              &__false {
+                @apply font-normal text-[0.875rem] text-[#F04438] mt-2;
+              }
+              &__notes {
+                @apply font-normal text-[0.875rem] text-[#98A2B3] mt-4 mb-6;
+              }
+            }
+            &__purchase-type {
+              &__wrapper {
+                @apply p-6 border border-solid border-[#E4E7EC] rounded-xl overflow-hidden shadow-lg;
+              }
+              &__text-wrap {
+                @apply flex flex-col gap-2 mb-6;
+              }
+              &__title {
+                @apply text-[#F87304] text-[1.125rem] font-bold;
+              }
+              &__detail {
+                @apply text-[#101C3C] text-[0.875rem] font-normal;
+              }
+              &__btn-wrap {
+                @apply flex flex-col gap-2;
+              }
+            }
+          }
+
+          &__rightMobile {
+            &__wrapper {
+              @apply w-[100%] smallPc:hidden largePc:hidden h-full flex flex-col mobile:mb-8 tab:mb-8;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+.slideWrapper {
+  justify-content: center;
+}
+
+.slick-prev {
+  left: 10.5% !important;
+  width: 32px !important;
+  height: 32px !important;
+  z-index: 1;
+}
+
+.slick-prev:before, .slick-next:before {
+  display: none;
+  }
+
+.slick-next {
+  right: 10.2% !important;
+  width: 32px !important;
+  height: 32px !important;
+  z-index: 1;
+}
+
+
+.slick-active { 
+  padding: 10px 24px 0px 24px; 
+  transition: transform 300ms;
+}
+
+.slick-center { 
+  // transform: scale(1.10);
+  transition: transform 300ms;
+}
+
+.slick-slide:not(.slick-active) { 
+  // margin: 20px 0; 
+  margin: 10px 0; 
+  // transform: scale(0.80);
+  transition: transform 300ms;
+}
+
+.slick-list {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.imgSliderPromo {
+  width: 100%;
+  max-height: 316px;
+  object-fit: fill;
+  border-radius: 1rem;
+}
+
+.slick-dots {
+  bottom: 70px !important;
+  z-index: 20 !important; 
+  .slick-active {
+    padding: 10px 4px 0px 4px;
+  }
+}
+
+.slick-dots.slick-thumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.slick-dots.slick-thumb li {  
+  width: 8px;
+  height: 8px;
+  // margin: 0 3px;
+  border-radius: 999px;
+  transition: all 0.5s ease-in-out;
+  will-change: width;
+  background-color: #EAEBEB;
+}
+
+.slick-dots.slick-thumb li.slick-active {
+  background-color: #FFFFFF;
+  width: 32px;
+}
+
+// .imgNotActive {
+//   filter: brightness(50%);
+// }
+
+// specific for homespot update
+#article-slick .slick-prev {
+  left: -0.3% !important;
+  width: 32px !important;
+  height: 32px !important;
+  z-index: 1;
+}
+
+#article-slick .slick-next {
+  right: -0.3% !important;
+  width: 32px !important;
+  height: 32px !important;
+  z-index: 1;
+}
+
+#article-slick .slick-active {
+  padding: 10px 12px !important;
+}
+
+#article-slick .slick-slide:not(.slick-active) {
+  padding: 10px 12px !important;
+}
+
+// for image show on compare units
+
+#image-compare .slick-dots {
+  z-index: 20 !important;
+  cursor: default;
+  bottom: -16px !important;
+  .slick-active {
+    cursor: default;
+    padding: 10px 4px 0px 4px;
+  }
+}
+
+#image-compare .slick-slide:not(.slick-active) { 
+  margin: 0px;
+  padding: 0 10px;
+  transition: transform 300ms;
+}
+
+#image-compare .slick-active { 
+  transition: transform 300ms;
+  padding: 0px !important;
+}
+
+#image-compare .slick-dots.slick-thumb-compare {
+  cursor: default;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#image-compare .slick-dots.slick-thumb-compare li { 
+  cursor: default; 
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  transition: all 0.5s ease-in-out;
+  will-change: width;
+  background-color: #EAEBEB;
+}
+
+#image-compare .slick-dots.slick-thumb-compare li.slick-active {
+  background-color: #1078CA;
+  width: 28px;
+}

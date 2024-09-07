@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .checkbox {
+    &__wrapper {
+      @apply flex w-full;
+    }
+    &__checker {
+      @apply form-checkbox rounded text-[#00529C] #{!important};
+    }
+    &__label {
+      @apply font-medium;
+    }
+  }
+}

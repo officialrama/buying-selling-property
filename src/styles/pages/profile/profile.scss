@@ -1,0 +1,244 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .profile-page {
+    &__wrapper {
+      @apply shadow border border-gray-200 bg-white p-[24px] rounded-lg mobile:overflow-x-scroll;
+    }
+    &__body-wrap {
+      @apply gap-x-7 smallPc:grid largePc:grid;
+    }
+    &__left-wrap {
+      @apply border border-gray-200 rounded-lg p-3 h-max tab:w-1/3 tab:m-auto tab:mb-4;
+    }
+    &__left-wrap-unborder {
+      @apply p-3 h-max tab:w-1/3 tab:m-auto tab:mb-4;
+    }
+    &__profile-pic-wrap {
+      @apply pb-[100%] overflow-hidden relative rounded max-w-[100%] max-h-[100%] w-auto h-auto object-contain;
+    }
+    &__profile-pic {
+      @apply w-full h-full absolute object-cover;
+    }
+    &__profile-pic-empty {
+      @apply w-full h-full absolute bg-[#F2F5F7] object-cover;
+    }
+    &__profile-pic-icon {
+      @apply w-[60%] h-[inherit] m-auto;
+    }
+    &__button {
+      @apply w-full mt-3;
+    }
+    &__textbox-wrap {
+      @apply mb-4;
+    }
+    &__ttl-wrap {
+      @apply mb-4 grid grid-cols-2 gap-3;
+    }
+    &__edit-btn-wrap {
+      @apply flex flex-row justify-between;
+    }
+    &__edit-btn {
+      @apply p-2 border border-[#F87304] text-[0.75rem] rounded-xl;
+    }
+    &__textbox {
+      @apply cursor-not-allowed;
+    }
+    &__price-range-wrap {
+      @apply mb-4 grid largePc:grid-cols-2 smallPc:grid-cols-2 tab:grid-cols-2 mobile:grid-rows-2 gap-4;
+    }
+    &__price-range {
+      @apply pl-12 pr-12 #{!important};
+    }
+    &__i-pref {
+      @apply pl-36 pr-12 #{!important};
+    }
+    &__btn-wrap {
+      @apply flex justify-end mt-4;
+    }
+    &__btn-edit {
+      @apply text-[#F87304] font-normal;
+    }
+  }
+  .property-listing {
+    &__wrapper {
+      @apply shadow border border-gray-200 bg-white p-[24px] rounded-lg;
+    }
+  }
+  .pengajuan-kpr-list {
+    &__header {
+      @apply py-3 px-5;
+    }
+    &__tbl-data {
+      @apply py-3 px-5 align-middle;
+    }
+  }
+  .sales-ref {
+    &__wrapper {
+      @apply shadow border border-gray-200 bg-white p-[24px] rounded-lg mobile:overflow-x-scroll;
+    }
+    &__srch-drp-wrap {
+      @apply gap-x-7 grid;
+    }
+    &__srch-drp-gmk-wrap {
+      @apply gap-x-4 grid;
+      @media screen and (min-width: 640px) and (max-width: 769px) {
+        @apply gap-x-2 grid;
+      }
+    }
+    &__srch-drp {
+      @apply mb-4;
+    }
+    &.modal-add {
+      &__wrapper {
+        @apply p-6 pt-2 pb-0 flex-auto max-h-[75vh] overflow-y-auto w-full grid grid-cols-5 gap-7;
+      }
+      &__sales-img-wrap {
+        @apply col-start-1 col-end-3;
+      }
+      &__textbox {
+        @apply mb-2;
+      }
+      &__img-frame {
+        @apply border border-gray-200 rounded-lg p-4 h-max;
+      }
+      &__img-note {
+        @apply text-center text-[#667085] text-[12px] mt-4;
+      }
+      &__form-wrap {
+        @apply flex flex-col col-start-3 col-end-6 gap-4;
+      }
+    }
+  }
+  .user-ref {
+    &__wrapper {
+      @apply shadow border border-gray-200 bg-white p-[24px] rounded-lg mobile:overflow-x-scroll;
+    }
+    &__srch-drp-wrap {
+      @apply gap-x-7 grid;
+    }
+    &__srch-drp-gmk-wrap {
+      @apply gap-x-4 grid;
+      @media screen and (min-width: 640px) and (max-width: 769px) {
+        @apply gap-x-2 grid;
+      }
+    }
+    &__srch-drp {
+      @apply mb-4;
+    }
+    &.modal-add {
+      &__wrapper {
+        @apply p-6 pt-2 pb-0 flex-auto max-h-[75vh] overflow-y-auto w-full grid grid-cols-5 gap-7;
+      }
+      &__user-img-wrap {
+        @apply col-start-1 col-end-3;
+      }
+      &__textbox {
+        @apply mb-2;
+      }
+      &__img-frame {
+        @apply border border-gray-200 rounded-lg p-4 h-max;
+      }
+      &__img-note {
+        @apply text-center text-[#667085] text-[12px] mt-4;
+      }
+      &__form-wrap {
+        @apply flex flex-col col-start-3 col-end-6 gap-4;
+      }
+    }
+  }
+  .saved-prop {
+    &__wrapper {
+      @apply shadow border border-gray-200 bg-white p-[24px] rounded-lg mb-6;
+    }
+    &__content-wrap {
+      @apply gap-x-7 tab:grid smallPc:grid largePc:grid;
+    }
+    &__img {
+      @apply mobile:mb-8 mobile:mx-auto;
+    }
+    &__filter {
+      @apply text-[#00529C] text-[12px] py-[4px] px-[8px] mx-[2px] bg-[#EAF6FF] font-semibold rounded-full;
+    }
+    &__prop-name {
+      @apply text-[18px] mt-[4px] font-semibold;
+    }
+    &__location {
+      @apply text-[14px] text-[#98A2B3] mb-[16px] font-normal;
+    }
+    &__price {
+      @apply text-[#101C3C] text-[18px] mb-[16px] font-bold;
+    }
+    &__dev {
+      @apply text-[#101C3C] text-[14px] font-medium;
+    }
+    &__dev-name {
+      @apply text-[#F87304] font-bold;
+    }
+    &__info-wrap {
+      @apply border-2 border-[#EAF6FF] mt-[8px] rounded-lg;
+    }
+    &__fac-wrap {
+      @apply px-[12px] py-[8px] mobile:grid mobile:grid-cols-2 tab:flex smallPc:flex largePc:flex;
+    }
+    &__fac {
+      @apply flex mobile:mr-0 mr-12 mobile:mb-4;
+    }
+    &__fac-icon {
+      @apply w-[18px] place-self-center;
+    }
+    &__fac-name {
+      @apply ml-[7px] text-[#101C3C] place-self-center;
+    }
+    &__info-b {
+      @apply w-full border-[#EAF6FF] border-t-2;
+    }
+    &__kpr-wrap {
+      @apply px-[12px] py-[8px] bg-[#B7DFFE] rounded-b-md;
+    }
+    &__kpr {
+      @apply flex justify-between items-center;
+    }
+    &__title {
+      @apply text-[#101C3C] text-[14px] font-medium;
+    }
+    &__desc {
+      @apply text-[#00529C] text-[14px] font-bold;
+    }
+    &__dnf {
+      @apply text-center italic text-[12px] font-normal;
+    }
+  }
+}
+
+@layer utilities {
+  .gtc-profile-page-s {
+    grid-template-columns: 2fr 4.1fr !important;
+  }
+  .gtc-profile-page {
+    grid-template-columns: 1.1fr 5fr !important;
+  }
+  .gtc-save-prop {
+    grid-template-columns: 1.3fr 4.9fr !important;
+  }
+  .gtc-salesdeveloper-reff {
+    grid-template-columns: 40% 0.5fr 0.4fr 0.5fr !important;  
+    @media screen and (min-width: 640px) and (max-width: 1280px) { 
+      grid-template-columns: 40% 0.5fr 0.3fr 0.5fr !important;
+    }
+    @media screen and (min-width: 320px) and (max-width: 639px) {
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
+  }
+  .gtc-userdeveloper-reff {
+    grid-template-columns: 37% 1fr 1fr 1fr !important;
+    @media screen and (min-width: 640px) and (max-width: 769px) {
+      grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr !important;
+    }
+    @media screen and (min-width: 320px) and (max-width: 639px) {
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
+  }
+}

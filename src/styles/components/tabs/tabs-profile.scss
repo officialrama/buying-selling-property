@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .tabs-profile {
+    &__wrapper {
+      @apply w-full px-2 sm:px-0;
+    }
+    &__tab-list {
+      @apply tab:flex smallPc:flex largePc:flex p-1 space-x-1 justify-between mobile:overflow-x-auto tab:overflow-x-auto;
+    }
+    &__tab-wrap {
+      @apply inline-flex overflow-x-auto;
+    }
+    &__tab {
+      @apply w-auto mobile:w-full px-12 py-2.5 text-sm leading-5 whitespace-nowrap font-medium;
+    }
+    &__select {
+      @apply text-[#101C3C] border-[#F87304] border-b-4;
+    }
+    &__not-select {
+      @apply text-[#667085] font-normal;
+    }
+    &__sellprop-btn-wrap {
+      @apply mobile:mt-8;
+    }
+    &__sellprop-btn {
+      @apply mobile:w-full;
+    }
+    &__tab-panels {
+      @apply py-2;
+    }
+    &__search-dropdown {
+      @apply gap-x-7 tab:grid smallPc:grid largePc:grid mobile:mt-8;
+    }
+    &__textbox-wrap {
+      @apply mb-4;
+    }
+    &__tab-panel {
+      @apply bg-white rounded-xl p-3 focus:outline-none focus:ring-2 ring-offset-2 ring-offset-blue-400 ring-white ring-opacity-60 w-[inherit] block whitespace-nowrap;
+    }
+    &__loading {
+      @apply text-center py-2;
+    }
+    &__text-not-found {
+      @apply italic text-[0.688rem] font-normal;
+    }
+  }
+}
+
+@layer utilities {
+  .gtc-tab-panels {
+    grid-template-columns: 4.7fr 1.5fr;
+  }
+}

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .signup-login {
+    &__form-wrap {
+      @apply max-h-[600px] overflow-y-auto -mx-4 px-4 mb-4;
+    }
+    &__captcha-wrap {
+      @apply mb-5 flex flex-row gap-2;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .textbox {
+    &__shape {
+      &__withShadow {
+        @apply w-full shadow font-[400] focus:outline-none focus:shadow-lg focus:shadow-slate-200 duration-100 shadow-gray-100 rounded-lg #{!important};
+      }
+      &__withoutShadow {
+        @apply w-full bg-transparent outline-none duration-100 focus:outline-none focus:border-transparent focus:ring-0 #{!important};
+      }
+      &__disablePadding {
+        @apply p-0 #{!important};
+      }
+      &__semiBold {
+        @apply font-semibold;
+      }
+      &__prefixPadding {
+        @apply pl-[20px] font-normal;
+      }
+    }
+    &__color {
+      &__placeholder {
+        &__gray {
+          @apply placeholder:text-[#667085] text-sm #{!important};
+        }
+        &__black {
+          @apply placeholder:text-[#101C3C] #{!important};
+        }
+        &__blue {
+          @apply placeholder:text-[#00529C] #{!important};
+        }
+        &__white {
+          @apply placeholder:text-[#FFFFFF] #{!important};
+        }
+      }
+      &__border {
+        &__gray {
+          @apply border-[#E4E7EC] #{!important};
+        }
+        &__none {
+          @apply border-0 #{!important};
+        }
+      }
+      &__bg {
+        &__lightGrey {
+          @apply bg-[#F2F5F7] #{!important};
+        }
+        &__white {
+          @apply bg-[#FFFFFF] #{!important};
+        }
+        &__transparent {
+          @apply bg-transparent #{!important};
+        }
+      }
+    }
+    &__invalidTxt {
+      @apply text-[#F04438] text-[12px] mobile:max-w-full max-w-[400px] mt-2;
+    }
+    &__passwordReveal {
+      @apply border border-[#E4E7EC] p-[0.7rem] bg-[#FFFFFF] shadow hover:outline-none hover:shadow-md hover:shadow-slate-200 duration-100 shadow-gray-100 rounded-md m-auto cursor-pointer;
+    }
+    &__passwordRevealV2 {
+      @apply p-[0.7rem] cursor-pointer;
+    }
+  }
+}

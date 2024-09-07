@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .dropdown {
+    &__wrapper {
+      @apply bg-[#FFFFFF] border border-solid border-[#CAD0DA] w-full rounded-lg shadow font-normal focus:outline-none focus:shadow-lg focus:shadow-slate-200 shadow-gray-100 flex relative #{!important};
+    }
+    &__listboxButton {
+      @apply flex px-3 py-2 text-[#667085] font-medium w-full #{!important};
+    }
+    &__icons {
+      @apply place-self-center mr-3;
+    }
+    &__value {
+      @apply text-left place-self-center mr-3 w-full overflow-ellipsis whitespace-nowrap overflow-hidden;
+    }
+    &__arrowDown {
+      @apply place-self-center;
+    }
+    &__listboxOptionsWrapper {
+      @apply rounded-lg bg-white border border-solid border-[#CAD0DA] mobile:w-[100%] w-[inherit] absolute z-50 mt-11 shadow duration-100 max-h-[200px] shadow-gray-100 overflow-y-auto #{!important};
+    }
+    &__listboxOption {
+      @apply px-4 py-2 cursor-pointer whitespace-nowrap overflow-ellipsis hover:bg-gray-100 overflow-hidden mobile:overflow-visible;
+    }
+  }
+  .autocompSearch {
+    &__topWrapper {
+      @apply relative bg-[#FFFFFF] border border-solid border-[#CAD0DA] w-full rounded-lg shadow font-normal focus:outline-none focus:shadow-lg focus:shadow-slate-200 shadow-gray-100 flex overflow-visible #{!important};
+    }
+    &__topWrapperDisabled {
+      @apply relative bg-[#F2F5F7] cursor-not-allowed border border-solid border-[#CAD0DA] w-full rounded-lg shadow font-normal focus:outline-none focus:shadow-lg focus:shadow-slate-200 shadow-gray-100 flex overflow-visible #{!important};
+    }
+    &__neoTopWrapper {
+      @apply relative bg-[#FFFFFF] border border-solid border-[#CAD0DA] w-[45%] mobile:w-[230%] rounded-lg shadow font-normal focus:outline-none focus:shadow-lg focus:shadow-slate-200 shadow-gray-100 flex overflow-visible #{!important};
+    }
+    &__neoTopWrapperDisabled {
+      @apply relative bg-[#F2F5F7] cursor-not-allowed border border-solid border-[#CAD0DA] w-[45%] mobile:w-[230%] rounded-lg shadow font-normal focus:outline-none focus:shadow-lg focus:shadow-slate-200 shadow-gray-100 flex overflow-visible #{!important};
+    }
+    &__provTopWrapper {
+      @apply relative bg-[#FFFFFF] border border-solid border-[#CAD0DA] w-full mobile:w-[230%] rounded-lg shadow font-normal focus:outline-none focus:shadow-lg focus:shadow-slate-200 shadow-gray-100 flex overflow-visible #{!important};
+    }
+    &__provTopWrapperDisabled {
+      @apply relative bg-[#F2F5F7] cursor-not-allowed border border-solid border-[#CAD0DA] w-full mobile:w-[230%] rounded-lg shadow font-normal focus:outline-none focus:shadow-lg focus:shadow-slate-200 shadow-gray-100 flex overflow-visible #{!important};
+    }
+    &__wrapper {
+      @apply w-full relative bg-transparent inline-block #{!important};
+    }
+    &__textbox {
+      @apply w-full place-self-center border-[#cad0da] bg-transparent;
+    }
+    &__dropdownWrap {
+      @apply w-full h-[12rem] bg-white overflow-y-auto absolute z-10 mt-[0.7rem] shadow cursor-default;
+    }
+    &__dropdownItem {
+      @apply border-y-[1px] border-[#ededed] px-1 py-2 cursor-pointer hover:bg-gray-200;
+    }
+  }
+}

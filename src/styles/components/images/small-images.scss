@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .small-img {
+    &__wrapper {
+      @apply flex rounded-t-xl overflow-hidden;
+    }
+    &__img {
+      @apply w-full h-full rounded-t-xl object-cover;
+    }
+    &__imgResult {
+      @apply w-[10rem] h-full rounded-t-xl object-cover;
+    }
+    &__is-virtual {
+      @apply absolute top-0 mx-2 my-2;
+    }
+    &.is-slideshow {
+      &__left-btn {
+        @apply absolute top-1/2 left-[10px] transform -translate-x-0 -translate-y-1/2 z-10 cursor-pointer;
+      }
+      &__right-btn {
+        @apply absolute top-1/2 right-[10px] transform -translate-x-0 -translate-y-1/2 cursor-pointer z-10;
+      }
+      &__count-img-wrap {
+        @apply absolute w-fit h-fit py-[2px] px-[8px] bg-white bg-opacity-30 rounded-full left-1/2 bottom-[0px] transform -translate-x-1/2 -translate-y-1/2;
+      }
+      &__count-img {
+        @apply place-self-center text-white text-[12px] font-semibold;
+      }
+    }
+  }
+  .t-img-wrap {
+    @apply w-full h-[inherit] bg-gray-500;
+  }
+}
+
+.bghjHX {
+  margin: 0 !important;
+}

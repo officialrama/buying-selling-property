@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .pagination {
+    &__wrapper {
+      @apply bg-white px-4 py-3 mt-[35px] flex items-center justify-center sm:px-6;
+    }
+    &__mobile-wrap {
+      @apply flex-1 flex justify-center sm:hidden;
+    }
+    &__prev-m {
+      @apply relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50;
+    }
+    &__next-m {
+      @apply ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50;
+    }
+    &__large-wrap {
+      @apply hidden sm:flex-1 sm:flex sm:items-center sm:justify-center;
+    }
+    &__prev-wrap {
+      @apply relative z-0 inline-flex rounded-md shadow-sm -space-x-px;
+    }
+    &__prev {
+      @apply relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50;
+    }
+    &__page-num-select {
+      @apply z-10 bg-indigo-50 border-indigo-500 text-indigo-600 relative inline-flex items-center px-4 py-2 border text-sm font-medium #{!important};
+    }
+    &__page-num {
+      @apply bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium #{!important};
+    }
+    &__page-dot {
+      @apply relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700;
+    }
+    &__page-hide-tab {
+      @apply bg-white border-gray-300 text-gray-500 hover:bg-gray-50 hidden md:inline-flex relative items-center px-4 py-2 border text-sm font-medium;
+    }
+    &__next {
+      @apply relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50;
+    }
+  }
+}

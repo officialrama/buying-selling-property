@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .select-compare-prop {
+    &__wrapper {
+      &__baseModal {
+        @apply grid grid-flow-row gap-3 my-6;
+      }
+      &__flexWrapper {
+        @apply grid grid-flow-row w-full;
+      }
+    }
+    &__title {
+      @apply font-medium text-[0.875rem] mb-2;
+    }
+  }
+}

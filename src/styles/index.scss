@@ -1,0 +1,403 @@
+// @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: 'BRIDigitalText';
+  src: url('../../public/fonts/BRIDigitalText-Regular.ttf') format('truetype');
+  /* You can add other font formats here if needed (e.g., woff, woff2) */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BRIDigitalText';
+  src: url('../../public/fonts/BRIDigitalText-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BRIDigitalText';
+  src: url('../../public/fonts/BRIDigitalText-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BRIDigitalText';
+  src: url('../../public/fonts/BRIDigitalText-Light.ttf') format('truetype');
+  font-weight: 300; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BRIDigitalText';
+  src: url('../../public/fonts/BRIDigitalText-Medium.ttf') format('truetype');
+  font-weight: 500; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BRIDigitalText';
+  src: url('../../public/fonts/BRIDigitalText-Heavy.ttf') format('truetype');
+  font-weight: 800; 
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "BRIDigitalText", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.__dashboard-bg {
+  background: 
+  linear-gradient(
+      110.22deg,
+      rgba(16, 24, 40, 0.3) 10.13%,
+      rgba(16, 24, 40, 0) 87.97%
+    ),
+    url("../../public/images/jumbotron.png");
+    // background-size: 100% 100%;
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // url("../../public/images/banner_landing.jpg");
+    // url("../../public/images/kpr-expo-medan-jumbotron-desktop.png");
+    padding-top: 100px;
+    height: 700px;
+    background-position: center -135px;
+    // @media screen and (min-width: 770px) and (max-width: 1280px) {
+    //   background: linear-gradient(
+    //     110.22deg,
+    //     rgba(16, 24, 40, 0.3) 10.13%,
+    //     rgba(16, 24, 40, 0) 87.97%
+    //   ),
+    //   url("../../public/images/kpr-expo-medan-jumbotron-desktop-1268.png");
+    //   padding-top: 100px;
+    // }
+
+    // @media screen and (min-width: 640px) and (max-width: 769px) {
+    //   background: linear-gradient(
+    //     110.22deg,
+    //     rgba(16, 24, 40, 0.3) 10.13%,
+    //     rgba(16, 24, 40, 0) 87.97%
+    //   ),
+    //   url("../../public/images/kpr-expo-medan-jumbotron-mobile.png");
+    //   padding-top: 100px;
+    // }
+    @media screen and (min-width: 269px) and (max-width: 639px) {
+      background: 
+      linear-gradient(
+        110.22deg,
+        rgba(16, 24, 40, 0.3) 10.13%,
+        rgba(16, 24, 40, 0) 87.97%
+      ),
+      url("../../public/images/jumbotron.png");
+      background-size: cover;
+      background-position: center center;
+      padding-top: 60px;
+    }
+}
+
+.__dashboard-bg-expo {
+  background: 
+  // linear-gradient(
+  //     110.22deg,
+  //     rgba(16, 24, 40, 0.3) 10.13%,
+  //     rgba(16, 24, 40, 0) 87.97%
+  //   ),
+    url("../../public/images/kpr-expo-128-_-jumbotron-desktop-1908x378.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    // url("../../public/images/banner_landing.jpg");
+    // url("../../public/images/kpr-expo-medan-jumbotron-desktop.png");
+    padding-top: 250px;
+    height: 700px;
+    // background-position: center -135px;
+    @media screen and (min-width: 770px) and (max-width: 1280px) {
+      background: 
+      // linear-gradient(
+      //   110.22deg,
+      //   rgba(16, 24, 40, 0.3) 10.13%,
+      //   rgba(16, 24, 40, 0) 87.97%
+      // ),
+      url("../../public/images/kpr-expo-128-_-jumbotron-desktop-1268x377.png");
+      padding-top: 240px;
+    }
+
+    // @media screen and (min-width: 640px) and (max-width: 769px) {
+    //   background: linear-gradient(
+    //     110.22deg,
+    //     rgba(16, 24, 40, 0.3) 10.13%,
+    //     rgba(16, 24, 40, 0) 87.97%
+    //   ),
+    //   url("../../public/images/kpr-expo-medan-jumbotron-mobile.png");
+    //   padding-top: 100px;
+    // }
+    @media screen and (min-width: 269px) and (max-width: 639px) {
+      background: 
+      // linear-gradient(
+      //   110.22deg,
+      //   rgba(16, 24, 40, 0.3) 10.13%,
+      //   rgba(16, 24, 40, 0) 87.97%
+      // ),
+      url("../../public/images/kpr-expo-128-_-jumbotron-mobile-375x247.png");
+      background-size: cover;
+      background-position: center center;
+      padding-top: 200px;
+    }
+}
+
+.__expo-bg {
+  background: linear-gradient(
+    110.22deg,
+    rgba(16, 24, 40, 0.3) 10.13%,
+    rgba(16, 24, 40, 0) 87.97%
+  );
+  //url("../../public/images/kpr-expo-makassar-large.png");
+  //padding-top: 350px;
+
+  @media screen and (min-width: 770px) and (max-width: 1280px) {
+    background: linear-gradient(
+      110.22deg,
+      rgba(16, 24, 40, 0.3) 10.13%,
+      rgba(16, 24, 40, 0) 87.97%
+    );
+    //url("../../public/images/kpr-expo-makassar-1268.png");
+    ////padding-top: 350px;
+    //padding: 350px 250px 0 250px;
+  }
+
+  @media screen and (min-width: 640px) and (max-width: 769px) {
+    background: linear-gradient(
+      110.22deg,
+      rgba(16, 24, 40, 0.3) 10.13%,
+      rgba(16, 24, 40, 0) 87.97%
+    )
+    //url("../../public/images/expo-makasar-popupbanner.png");
+    //padding-top: 450px;
+  }
+  @media screen and (min-width: 269px) and (max-width: 639px) {
+    background: linear-gradient(
+      110.22deg,
+      rgba(16, 24, 40, 0.3) 10.13%,
+      rgba(16, 24, 40, 0) 87.97%
+    );
+    //url("../../public/images/expo-makasar-popupbanner.png");
+    //padding-top: 450px;
+  }  
+}
+
+// toast
+.notificationWrapper {
+  @apply flex flex-row items-center justify-between w-96 bg-gray-900 px-4 py-6 text-white shadow-2xl hover:shadow-none transform-gpu translate-y-0 hover:translate-y-1 rounded-xl relative transition-all duration-500 ease-in-out;
+}
+
+.iconWrapper {
+  @apply text-xl;
+}
+
+.contentWrapper {
+  @apply flex flex-col items-start justify-center ml-4 cursor-default;
+}
+
+.contentWrapper h1 {
+  @apply text-base text-gray-200 font-semibold leading-none tracking-wider;
+}
+
+.contentWrapper p {
+  @apply text-sm text-gray-400 mt-2 leading-relaxed tracking-wider;
+}
+
+.closeIcon {
+  @apply absolute top-2 right-2 cursor-pointer text-lg;
+}
+
+.remove-focus-border:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+// loading
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin: 2px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+// loading
+.lds-ring-blue {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.lds-ring-blue div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin: 2px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #00529C transparent transparent transparent;
+}
+.lds-ring-blue div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring-blue div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring-blue div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring-blue {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 9px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  border: transparent;
+}
+
+// Slider
+.fJKSLk {
+  margin: 0 !important;
+}
+
+button.rts___left___nav___btn.rts___btn.rts___nav___btn {
+  border: 0 !important;
+}
+
+button.rts___left___nav___btn.rts___btn.rts___nav___btn:hover {
+  background: transparent !important;
+}
+
+button.rts___right___nav___btn.rts___btn.rts___nav___btn {
+  border: 0 !important;
+}
+
+button.rts___right___nav___btn.rts___btn.rts___nav___btn:hover {
+  background: transparent !important;
+}
+
+.navLeft {
+  position: absolute;
+  bottom: -35px;
+  left: 92%;
+  cursor: pointer;
+
+  @media screen and (min-width: 1920px) {
+    left: 70%;
+  }
+}
+
+.navLeft360 {
+  position: absolute;
+  bottom: -35px;
+  left: 94%;
+  cursor: pointer;
+
+  @media screen and (min-width: 640px) and (max-width: 1025px) {
+    left: 88%;
+  }
+  @media screen and (min-width: 1920px) {
+    left: 95.6%;
+  }
+}
+
+.navRight {
+  position: absolute;
+  bottom: -36px;
+  right: 0px;
+  cursor: pointer;
+  @media screen and (min-width: 1920px) {
+    right: 30px;
+  }
+}
+
+.navRight360 {
+  position: absolute;
+  bottom: -36px;
+  right: 0px;
+  cursor: pointer;
+  @media screen and (min-width: 1920px) {
+    right: 9px;
+  }
+}
+
+.backgroundNearby {
+  background-image: url("../../public/images/logo city/background-nearby.png"), url("../../public/images/logo city/background-nearby(2).png");
+  background-position: right bottom, left top;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  @media screen and (min-width: 280px) and (max-width: 639px) {
+    background-image: url("../../public/images/logo city/background-nearby(2).png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.checkbox__checker:checked, .checkbox__checker:checked:focus, .checkbox__checker:checked:hover {
+  background-color: #006CC7 !important;
+  border-color: #006CC7 !important;
+}

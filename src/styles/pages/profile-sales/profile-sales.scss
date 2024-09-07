@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sales-page {
+    &__wrapper {
+      @apply shadow border border-gray-200 bg-white p-[24px] rounded-lg mobile:overflow-x-scroll;
+    }
+    &__srch-drp-wrap {
+      @apply gap-x-7 grid;
+    }
+    &__srch-drp-gmk-wrap {
+      @apply gap-x-4 grid;
+      @media screen and (min-width: 640px) and (max-width: 769px) {
+        @apply gap-x-2 grid;
+      }
+    }
+    &__srch-drp {
+      @apply mb-4;
+    }
+    &.modal-add {
+      &__wrapper {
+        @apply p-6 pt-2 pb-0 flex-auto max-h-[75vh] overflow-y-auto w-full grid grid-cols-5 gap-7;
+      }
+      &__sales-img-wrap {
+        @apply col-start-1 col-end-3;
+      }
+      &__textbox {
+        @apply mb-2;
+      }
+      &__img-frame {
+        @apply border border-gray-200 rounded-lg p-4 h-max;
+      }
+      &__img-note {
+        @apply text-center text-[#667085] text-[12px] mt-4;
+      }
+      &__form-wrap {
+        @apply flex flex-col col-start-3 col-end-6 gap-4;
+      }
+    }
+  }
+  .penjualan-final {
+    &__wrapper {
+      @apply shadow border border-gray-200 bg-white p-[24px] rounded-lg;
+    }
+  }
+  .penjualan-final-list {
+    &__wrapper {
+      @apply border-[#E4E7EC] border-b border-solid;
+    }
+    &__header {
+      @apply p-3 align-middle whitespace-nowrap;
+    }
+    &__header-icon {
+      @apply p-3 justify-end align-middle;
+    }
+    &__icon-wrap {
+      @apply flex flex-row gap-3;
+    }
+    &__icon-btn {
+      @apply cursor-pointer;
+    }
+    &__col-icon-wrap {
+      @apply border-[#CAD0DA] p-3 flex justify-start align-baseline border-b border-r;
+      &--dev {
+        @apply border-b border-r border-[#CAD0DA] smallPc:pr-8;
+      }
+    }
+    &__tbl {
+      @apply p-[13px] border-t border-b border-[#CAD0DA] smallPc:pr-8;
+      &--left {
+        @extend .penjualan-final-list__tbl;
+        @apply rounded-tl-lg border-l;
+      }
+      &--right {
+        @extend .penjualan-final-list__tbl;
+        @apply rounded-tr-lg border-r;
+      }
+    }
+  }
+  .setting-page-sales {
+    &__wrapper {
+      @apply shadow border border-gray-200 bg-white p-[50px] rounded-lg mobile:overflow-x-scroll;
+    }
+    &__body-wrap {
+      @apply gap-x-7 smallPc:grid largePc:grid;
+    }
+    &__left-wrap {
+      @apply border border-gray-200 rounded-lg p-3 h-max tab:w-1/3 tab:m-auto tab:mb-4;
+    }
+    &__profile-pic-wrap {
+      @apply pb-[100%] overflow-hidden relative rounded;
+    }
+    &__profile-pic {
+      @apply w-full h-full absolute object-cover;
+    }
+    &__profile-pic-empty {
+      @apply w-full h-full absolute bg-[#F2F5F7] object-cover;
+    }
+    &__profile-pic-icon {
+      @apply w-[60%] h-[inherit] m-auto;
+    }
+    &__button {
+      @apply w-full mt-3;
+    }
+    &__textbox-wrap {
+      @apply mb-4;
+    }
+    &__ttl-wrap {
+      @apply mb-4 grid grid-cols-2 gap-3;
+    }
+    &__edit-btn-wrap {
+      @apply flex flex-row justify-between;
+    }
+    &__edit-btn {
+      @apply p-2 border border-[#F87304] text-[0.75rem] rounded-xl;
+    }
+    &__textbox {
+      @apply cursor-not-allowed;
+    }
+    &__price-range-wrap {
+      @apply mb-4 grid largePc:grid-cols-2 smallPc:grid-cols-2 tab:grid-cols-2 mobile:grid-rows-2 gap-4;
+    }
+    &__price-range {
+      @apply pl-12 pr-12 #{!important};
+    }
+    &__i-pref {
+      @apply pl-36 pr-12 #{!important};
+    }
+    &__btn-wrap {
+      @apply flex justify-end mt-4;
+    }
+    &__btn-edit {
+      @apply text-[#F87304] font-normal;
+    }
+  }
+  
+}
+
+@layer utilities {
+  .gtc-setting-page-sales-s {
+    grid-template-columns: 2fr 4.1fr !important;
+  }
+  .gtc-setting-page-sales {
+    grid-template-columns: 1.1fr 5fr !important;
+  }
+  .gtc-save-prop {
+    grid-template-columns: 1.3fr 4.9fr !important;
+  }
+  .gtc-penjualandraft-reff {
+    grid-template-columns: 60% 1fr 1fr !important;
+    @media screen and (min-width: 640px) and (max-width: 769px) {
+      grid-template-columns: 30% 0.5fr 0.1fr !important;
+    }
+    @media screen and (min-width: 320px) and (max-width: 639px) {
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
+  }
+  .gtc-penjualanfinal-reff {
+    grid-template-columns: 50% 0.5fr 0.5fr 0.5fr !important;
+    @media screen and (min-width: 640px) and (max-width: 769px) {
+      grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr !important;
+    }
+    @media screen and (min-width: 320px) and (max-width: 639px) {
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
+  }
+}

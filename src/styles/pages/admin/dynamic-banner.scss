@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .dynamic-banner {
+        &__nav-tabs {
+            @apply text-[0.875rem] text-[#00529C] border-0 rounded-none font-semibold;
+        }
+    }
+    .rts___tab {
+        @apply mx-0 #{!important};
+    }
+    .dynamic-banner__nav-tabs {
+        @apply text-[#777777] border-b-2 border-[#D3D4D4] #{!important};
+    }
+    .dynamic-banner__nav-tabs.rts___tab___selected {
+        @apply bg-transparent border-b-2 border-[#00529C] text-[#00529C] shadow-none #{!important};
+    }
+}

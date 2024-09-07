@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .payment-method {
+    &__wrapper {
+      &__baseModal {
+        @apply grid grid-flow-row gap-3 my-6;
+      }
+      &__flexWrapper {
+        @apply flex flex-row gap-6 w-full mobile:overflow-hidden;
+      }
+    }
+  }
+}

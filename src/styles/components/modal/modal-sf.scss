@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .modal-sf {
+    &__wrapper {
+      @apply flex flex-col place-items-center px-4 py-10 mobile:place-items-center;
+    }
+    &__circle {
+      @apply w-28 h-28 rounded-full;
+    }
+    &__title {
+      @apply font-bold text-[#00529C] text-[1.5rem] mt-3 text-center;
+    }
+    &__desc {
+      @apply text-[#00529C] text-[1.125rem] font-normal text-center;
+    }
+  }
+}

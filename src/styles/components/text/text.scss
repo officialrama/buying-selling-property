@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .textstyle {
+    &__basicGrey1 {
+      @apply text-[#667085] text-[16px] font-medium;
+    }
+  }
+  .fontsize {
+    &__large {
+      @apply mobile:text-[46px] tab:text-[46px] smallPc:text-[46px] largePc:text-[56px] leading-[4.5rem] border-0;
+    }
+    &__medium {
+      @apply mobile:text-[24px] tab:text-[24px] smallPc:text-[28px] largePc:text-[28px] border-0;
+    }
+    &__small {
+      @apply mobile:text-[16px] tab:text-[16px] smallPc:text-[18px] largePc:text-[24px] border-0;
+    }
+    &__smallest {
+      @apply mobile:text-[12px] tab:text-[12px] smallPc:text-[14px] largePc:text-[20px] border-0;
+    }
+    &__most_smallest {
+      @apply mobile:text-[12px] tab:text-[12px] smallPc:text-[12px] largePc:text-[18px] border-0;
+    }
+    &__most_smallest2 {
+      @apply mobile:text-[10px] tab:text-[10px] smallPc:text-[10px] largePc:text-[14px] border-0;
+    }
+  }
+  .fontweight {
+    &__bold {
+      @apply font-bold;
+    }
+    &__semibold {
+      @apply font-semibold;
+    }
+    &__normal {
+      @apply font-normal;
+    }
+  }
+  .fontcolor {
+    &__white {
+      @apply text-white;
+    }
+    &__blue {
+      @apply text-[#00529C] border-0;
+    }
+    &__black {
+      @apply text-[#101C3C] border-0;
+    }
+  }
+}
